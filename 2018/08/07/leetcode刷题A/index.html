@@ -84,15 +84,32 @@
 
 
 
-<meta name="description" content="不要留恋哥，哥只是个传说！">
-<meta property="og:type" content="website">
+<meta name="description" content="目录[toc]
+1 两数之和给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
+你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
+示例:1234给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1]
+我的做法如下，直接暴力，复杂度是O(n2)，我们试图通过遍历数组的其余部">
+<meta property="og:type" content="article">
 <meta property="og:title" content="旺仔鹏崽是个传说">
-<meta property="og:url" content="https://winper001.github.io/index.html">
+<meta property="og:url" content="https://winper001.github.io/2018/08/07/leetcode刷题A/index.html">
 <meta property="og:site_name" content="旺仔鹏崽是个传说">
-<meta property="og:description" content="不要留恋哥，哥只是个传说！">
+<meta property="og:description" content="目录[toc]
+1 两数之和给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
+你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
+示例:1234给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1]
+我的做法如下，直接暴力，复杂度是O(n2)，我们试图通过遍历数组的其余部">
+<meta property="og:image" content="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg">
+<meta property="og:image" content="http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Telephone-keypad2.svg/200px-Telephone-keypad2.svg.png">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif">
+<meta property="og:updated_time" content="2018-08-07T07:46:37.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="旺仔鹏崽是个传说">
-<meta name="twitter:description" content="不要留恋哥，哥只是个传说！">
+<meta name="twitter:description" content="目录[toc]
+1 两数之和给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
+你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
+示例:1234给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1]
+我的做法如下，直接暴力，复杂度是O(n2)，我们试图通过遍历数组的其余部">
+<meta name="twitter:image" content="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg">
 
 
 
@@ -110,7 +127,7 @@
   };
 </script>
 
-  <title> 旺仔鹏崽是个传说 </title>
+  <title>  | 旺仔鹏崽是个传说 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +148,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -253,9 +268,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -276,9 +291,6 @@
             
               
                 
-                <a class="post-title-link" href="/2018/08/07/leetcode刷题A/" itemprop="url">
-                  未命名
-                </a>
               
             
           </h1>
@@ -334,9 +346,7 @@
       
 
       
-        
-          
-            <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>[toc]</p>
+        <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>[toc]</p>
 <h1 id="1-两数之和"><a href="#1-两数之和" class="headerlink" title="1 两数之和"></a>1 两数之和</h1><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p>
 <p>你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。</p>
 <p>示例:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">给定 nums = [2, 7, 11, 15], target = 9</div><div class="line"></div><div class="line">因为 nums[0] + nums[1] = 2 + 7 = 9</div><div class="line">所以返回 [0, 1]</div></pre></td></tr></table></figure></p>
@@ -708,16 +718,19 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">char</span> <span class="title">chang_upOrLow</span><span class="params">(<span class="keyword">char</span> s)</span><span class="comment">//递归</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">char</span> res;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'A'</span> &amp;&amp; s&lt;=<span class="string">'Z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s+<span class="number">32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'a'</span> &amp;&amp; s&lt;=<span class="string">'z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s<span class="number">-32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">generate</span><span class="params">(<span class="built_in">string</span> &amp;S,<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; &amp;res,<span class="keyword">int</span> index)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(index&gt;=S.size())</div><div class="line">    &#123;</div><div class="line">        res.push_back(S);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span>((S[index]&gt;=<span class="string">'a'</span> &amp;&amp; S[index]&lt;=<span class="string">'z'</span>) ||(S[index]&gt;=<span class="string">'A'</span> &amp;&amp; S[index]&lt;=<span class="string">'Z'</span>)) </div><div class="line">    <span class="comment">//if(S[index]&gt;='A' &amp;&amp; S[index]&lt;='z')</span></div><div class="line">    &#123;</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">    &#125;</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">    </div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; letterCasePermutation(<span class="built_in">string</span> S) </div><div class="line">    &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; res;</div><div class="line">        generate(S,res,<span class="number">0</span>);</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 <p><strong>或者</strong>：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">char</span> <span class="title">chang_upOrLow</span><span class="params">(<span class="keyword">char</span> s)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">char</span> res;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'A'</span> &amp;&amp; s&lt;=<span class="string">'Z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s+<span class="number">32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'a'</span> &amp;&amp; s&lt;=<span class="string">'z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s<span class="number">-32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">generate</span><span class="params">(<span class="built_in">string</span> &amp;S,<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; &amp;res,<span class="keyword">int</span> index)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(index&gt;=S.size())</div><div class="line">    &#123;</div><div class="line">        res.push_back(S);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span>((S[index]&gt;=<span class="string">'a'</span> &amp;&amp; S[index]&lt;=<span class="string">'z'</span>) ||(S[index]&gt;=<span class="string">'A'</span> &amp;&amp; S[index]&lt;=<span class="string">'Z'</span>)) </div><div class="line">    <span class="comment">//if(S[index]&gt;='A' &amp;&amp; S[index]&lt;='z')</span></div><div class="line">    &#123;</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span></div><div class="line">    &#123;</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; letterCasePermutation(<span class="built_in">string</span> S) </div><div class="line">    &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; res;</div><div class="line">        generate(S,res,<span class="number">0</span>);</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -725,266 +738,51 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/08/08/2016考研政治经验贴/" rel="next" title="2016考研政治经验贴">
+                <i class="fa fa-chevron-left"></i> 2016考研政治经验贴
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/08/08/2016考研政治经验贴/" itemprop="url">
-                  2016考研政治经验贴
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T17:01:22+08:00" content="2016-08-08">
-              2016-08-08
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随笔录/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔录</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/08/2016考研政治经验贴/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/08/2016考研政治经验贴/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/08/08/2016考研政治经验贴/" class="leancloud_visitors" data-flag-title="2016考研政治经验贴">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="2016考研政治随谈"><a href="#2016考研政治随谈" class="headerlink" title="2016考研政治随谈"></a>2016考研政治随谈</h1><p>本人winper，考的是华南理工大学电信学院的电子与通信工程。考研政治的分数是81，这个分数听起来是挺高的，但是要考取这个分数并不是很难。原因有二：一是今年的政治相对简单，二是存在泄题的现象。对于我本人来说，政治是我四科之中最有信心的学科，这也得益于我平时的政治素养吧。例如大学这几年的有关于政治的课程（思修，近现代史，毛概）上课的时候就很认真，以及平时也很喜欢看一些历史书籍，经常关注我党的理论动态和政策措施，并且我也会经常思考（建议大家在复习之余，也多多关注时事动态，多多思考和感悟）。另外，我记得考完政治之后，对了一下石磊的答案，选择题仅仅是错了一个单项（49分），那也可以得知今年的大题可能存在压分的情况。综上所述，当我自己看到这个分数时，并不吃惊，反而略显失望。<br>好了，下面我简单的介绍一下我去年的政治复习经验和心得。</p>
-<p>首先我先说下，我所有的资料：知识点精讲精练，1000题，8套卷，4套卷，肖秀荣真题，风中劲草核心考点，石磊的马原讲解视频和讲义。</p>
-<p>我大概是九月底十月初开始复习政治，这个阶段只用复习客观题。那时候用的是肖秀荣的《知识点精讲精炼》和《1000题》结合使用的。很多人会觉得那本《知识点精讲精练》太厚了，怎么看的完呢。对于这个问题，我只能说完全看个人！我是这么想的，那本知识点教材是服务于我做1000题的，我做一千题时候，遇到不会的，我不是直接看答案，而是在书里查找，实在找不到的就翻答案（不过一般都能找到）。有些重点题，我会做标记以示自己应该特别注意。当然1000题的每一章之前，我就会先把书本看一遍（其实就当看课外书一样还是蛮不错的，建议大家也这么做）。当完整的把1000题做完一遍之后，就会发现以前做过的题目也忘得差不多了。没关系，再做一遍！这一遍的时候肯定比第一次快和熟练，我一般对做过的题目印象会很深刻，当然第一遍做的时候很模糊的题，第二遍做依然模糊。所以这种模糊题和错题，就要特别的注意！这个阶段，我在刷题的同时，也还在看风中劲草核心考点，我觉得这本书写的特别好，5门课都浓缩在了一起，选择题和分析题的答题重点都标注的很清楚。对于这本书，建议大家把它至少看两遍！它可以帮大家梳理各科的知识脉络和形成一个知识体系！第一遍复习时，有些科目确实是比较难的。例如马原的政治经济学，对于广大的工科生来说，就是一个大坑，然而这块知识点每年必考，大约有6分左右。所以大家一定要复习好。主要是理解为主，建议大家可以看看石磊的马原课程中的政治经济学部分，个人感觉他讲的确实通俗易懂，出神入化。加上自己的思考和总结，再去做那些选择题就会发现很容易。</p>
-<p>到11月份，还算是客观题的复习阶段，如果大家觉得1000题已经看起来没有挑战性了。我建议可以买那本风中劲草的习题，那个题目量很大，但是出题出的很细很广。有空可以把它刷一遍。没有时间的话，那就不做这个题了，直接做真题的客观题。真题我选择的是肖老的书。我觉得它的真题写的特好。他的真题里面有知识点表，是对应于真题的考察的知识点所在。做第一遍的时候，一定要认真，把遗漏的或者自己模糊的知识点要查清楚，可以把他列的所有表格都看一遍或者有些直接背诵，相当有好处。总之，真题的选择题一定要多做几遍！做题同时，不能忘记及时抽空复习知识点（以风中劲草核心考点和肖秀荣真题的知识点表格为主！尤其是要考背诵的考点，如事件的时间和地点等）。</p>
-<p>说了这么多，大家可能会很着急，我们把全部精力放在了客观题上，主观题怎么办？其实大家不用担心。我觉得大题更多的是考大家的个人素养。其实我们在复习选择题的时候本身就是在不断地重复考点，所以在复习选择题时候一定要细心，不能急躁，花再多的时间都不为过！</p>
-<p>真正开始复习大题，我是从11月底开始！首先是对付真题的大题。说实话，真题的大题我一题都没写过，只是全部看了一下，为啥，因为我觉得没有必要。真题的的分析题看是一定要看的。我建议这么做，题干看完之后，自己可以脑子想想答题思路，想不出来直接看答案，对比下人家的思路。当你把所有的大题都过玩一遍的时候你就会发现，其实官方参考答案都是有套路的。例如：第一大题就是马原的哲学题，无非就是那些原理，结合一些材料去辩证的分析下；近现代史题，就多多的赞扬我党的好等等。好好分析，都是有套路的！不过，像那道哲学题，大家还是要自己先去把那些原理方法论总结出来背一背会更有把握！这个阶段，主要把心思花在8套卷和4套卷，还有要看看石磊的20天20题。把这些题目都分析一遍！尤其是四套卷，无论是选择题还是主观题一定要背的滚瓜烂熟。就拿今年来说，我觉得四套卷的答案好多都能用上，石磊的20天20题也完全压中马原的那道大题！反正我写起来特别顺。当然，也有很多同学说，答案写的不长。其实我觉得还是背的不够熟练的原因，没有大量的输入哪有输出嘛？！所以哦，在十二月份一定要全力以赴的开始背答题了！我一般是早上花一个小时背，晚上再花一个小时背诵或者复习。当然，这个阶段，客观题的复习不能忘了！！！！</p>
-<p>对了还有时事政治的选择题，2单2双，加起来有6分。这个完全是靠记忆了。没办法！但是还是有复习方法的！建议大家去网上搜一些资料或者有些考研辅导机构他们会出时事政治选择题的书，可以采取刷题背答案的策略，多找一些题目！相信我，一定能撞上原题的！</p>
-<p>我就是以这么一种方式去学习考研政治的额，最后还算是取得了不错的成绩。</p>
-<p>最后，我统一回答几个大众困惑：<br>1，  要不要报班？<br>我建议可以不用，烧钱。但是可以去网上下载视频去听一听课，例如石磊的冲刺课，肖秀荣的冲刺课程，听完之后自己也会自信些。<br>2，  政治时间如何安排<br>我建议12月份以前，2小时左右为宜，12月份冲刺阶段至少要有3小时。不同意的，看个人。<br>暂时想不起来了。。。。。。亲们还有其他问题,可以联系QQ1048784174</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
+
+    <div class="post-spread">
       
+        <div class="ds-share flat" data-thread-key="2018/08/07/leetcode刷题A/"
+     data-title=""
+     data-content=""
+     data-url="https://winper001.github.io/2018/08/07/leetcode刷题A/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
 
-  
-  
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
 
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/07/第一篇博文/" itemprop="url">
-                  第一次冒泡
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-07T14:00:41+08:00" content="2016-08-07">
-              2016-08-07
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/07/第一篇博文/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/07/第一篇博文/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/08/07/第一篇博文/" class="leancloud_visitors" data-flag-title="第一次冒泡">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>最恨英雄迟暮，最忌美人残颜。<br>因为觉得好玩，所以不能自控的搭建了一个博客。</p>
-
-          
-        
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -992,6 +790,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2018/08/07/leetcode刷题A/"
+           data-title="" data-url="https://winper001.github.io/2018/08/07/leetcode刷题A/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -1011,8 +817,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/winper.png"
@@ -1114,6 +929,17 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-两数之和"><span class="nav-number">2.</span> <span class="nav-text">1 两数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-两数相加-链表-（回到目录）"><span class="nav-number">3.</span> <span class="nav-text">2 两数相加(链表)（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-无重复字符的最长子串（回到目录）"><span class="nav-number">4.</span> <span class="nav-text">3 无重复字符的最长子串（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-两个排序数组的中位数"><span class="nav-number">5.</span> <span class="nav-text">4 两个排序数组的中位数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-最长回文子串（回到目录）"><span class="nav-number">6.</span> <span class="nav-text">5 最长回文子串（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-Z字形变换（回到目录）"><span class="nav-number">7.</span> <span class="nav-text">6 Z字形变换（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-反转整数"><span class="nav-number">8.</span> <span class="nav-text">7 反转整数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-字符串转整数-atoi-（回到目录）"><span class="nav-number">9.</span> <span class="nav-text">8 字符串转整数 (atoi)（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-回文数"><span class="nav-number">10.</span> <span class="nav-text">9 回文数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-正则表达式匹配（回到目录）"><span class="nav-number">11.</span> <span class="nav-text">10. 正则表达式匹配（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-盛水（回到目录）"><span class="nav-number">12.</span> <span class="nav-text">11 盛水（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12-整数转换成罗马数字（回到目录）"><span class="nav-number">13.</span> <span class="nav-text">12 整数转换成罗马数字（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13-罗马数字转换城整数（回到目录）"><span class="nav-number">14.</span> <span class="nav-text">13 罗马数字转换城整数（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#15-三数之和（回到目录）"><span class="nav-number">15.</span> <span class="nav-text">15 三数之和（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#16-最接近的三数之和"><span class="nav-number">16.</span> <span class="nav-text">16 最接近的三数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#17-电话号码的字母组合（回到目录）"><span class="nav-number">17.</span> <span class="nav-text">17 电话号码的字母组合（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18-四数之和（回到目录）"><span class="nav-number">18.</span> <span class="nav-text">18 四数之和（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#19-删除倒数第N个节点（回到目录）"><span class="nav-number">19.</span> <span class="nav-text">19 删除倒数第N个节点（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#21-合并两个有序链表"><span class="nav-number">20.</span> <span class="nav-text">21 合并两个有序链表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#20-有效的括号（回到目录）"><span class="nav-number">21.</span> <span class="nav-text">20 有效的括号（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#23-合并K个有序链表"><span class="nav-number">22.</span> <span class="nav-text">23 合并K个有序链表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#24-两两交换链表中相邻的节点（回到目录）"><span class="nav-number">23.</span> <span class="nav-text">24 两两交换链表中相邻的节点（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#26-删除排序数组中的重复项（82，83）（回到目录）"><span class="nav-number">24.</span> <span class="nav-text">26 删除排序数组中的重复项（82，83）（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#80-删除排序数组中的重复项-II（回到目录）"><span class="nav-number">25.</span> <span class="nav-text">80 删除排序数组中的重复项 II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#31-下一个排列（回到目录）"><span class="nav-number">26.</span> <span class="nav-text">31 下一个排列（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#32-最长有效括号"><span class="nav-number">27.</span> <span class="nav-text">32 最长有效括号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#33-搜索旋转排序数组"><span class="nav-number">28.</span> <span class="nav-text">33 搜索旋转排序数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#34-在排序数组中查找元素的第一个和最后一个位置（回到目录）"><span class="nav-number">29.</span> <span class="nav-text">34 在排序数组中查找元素的第一个和最后一个位置（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#35-搜索插入位置"><span class="nav-number">30.</span> <span class="nav-text">35 搜索插入位置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#39-组合总和-I"><span class="nav-number">31.</span> <span class="nav-text">39 组合总和 I</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#40-组合总和-II（回到目录）"><span class="nav-number">32.</span> <span class="nav-text">40 组合总和 II（回到目录）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法1"><span class="nav-number">32.1.</span> <span class="nav-text">方法1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#另一种做法"><span class="nav-number">32.2.</span> <span class="nav-text">另一种做法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#45-跳跃游戏-II"><span class="nav-number">33.</span> <span class="nav-text">45 跳跃游戏 II</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#46-全排列"><span class="nav-number">34.</span> <span class="nav-text">46 全排列</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#47-全排列II（回到目录）"><span class="nav-number">35.</span> <span class="nav-text">47 全排列II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#48-旋转图像（回到目录）"><span class="nav-number">36.</span> <span class="nav-text">48 旋转图像（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#49-字母异位词分组"><span class="nav-number">37.</span> <span class="nav-text">49 字母异位词分组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#51-N皇后（回到目录）"><span class="nav-number">38.</span> <span class="nav-text">51 N皇后（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#53-最大子序和"><span class="nav-number">39.</span> <span class="nav-text">53 最大子序和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#55-跳跃游戏（回到目录）"><span class="nav-number">40.</span> <span class="nav-text">55 跳跃游戏（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#61-旋转链表（回到目录）"><span class="nav-number">41.</span> <span class="nav-text">61 旋转链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#64-最小路径和"><span class="nav-number">42.</span> <span class="nav-text">64 最小路径和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#66-加一（回到目录）"><span class="nav-number">43.</span> <span class="nav-text">66 加一（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#67-二进制求和（回到目录）"><span class="nav-number">44.</span> <span class="nav-text">67 二进制求和（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#69-x-的平方根（回到目录）"><span class="nav-number">45.</span> <span class="nav-text">69 x 的平方根（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#70-爬楼梯答（回到目录）"><span class="nav-number">46.</span> <span class="nav-text">70 爬楼梯答（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#76-最小覆盖子串"><span class="nav-number">47.</span> <span class="nav-text">76 最小覆盖子串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#78-子集（回到目录）"><span class="nav-number">48.</span> <span class="nav-text">78 子集（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#82-删除排序链表中的重复元素II（回到目录）"><span class="nav-number">49.</span> <span class="nav-text">82 删除排序链表中的重复元素II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#83-删除排序链表中的重复元素（回到目录）"><span class="nav-number">50.</span> <span class="nav-text">83 删除排序链表中的重复元素（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#86-分割链表（回到目录）"><span class="nav-number">51.</span> <span class="nav-text">86 分割链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#88-合并有序数组"><span class="nav-number">52.</span> <span class="nav-text">88 合并有序数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#92-反转链表II（回到目录）"><span class="nav-number">53.</span> <span class="nav-text">92 反转链表II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#94-二叉树的中序遍历（144，145）（回到目录）"><span class="nav-number">54.</span> <span class="nav-text">94 二叉树的中序遍历（144，145）（回到目录）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#递归方法"><span class="nav-number">54.1.</span> <span class="nav-text">递归方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代方法"><span class="nav-number">54.2.</span> <span class="nav-text">迭代方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#101-对称二叉树（回到目录）"><span class="nav-number">55.</span> <span class="nav-text">101 对称二叉树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#102-二叉树的层次遍历"><span class="nav-number">56.</span> <span class="nav-text">102 二叉树的层次遍历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#104-二叉树的最大深度（递归）"><span class="nav-number">57.</span> <span class="nav-text">104 二叉树的最大深度（递归）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#111-二叉树的最小深度（回到目录）"><span class="nav-number">58.</span> <span class="nav-text">111 二叉树的最小深度（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#108-将有序数组转换为二叉搜索树（回到目录）"><span class="nav-number">59.</span> <span class="nav-text">108 将有序数组转换为二叉搜索树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#109-有序链表转换二叉搜索树"><span class="nav-number">60.</span> <span class="nav-text">109 有序链表转换二叉搜索树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#110-平衡二叉树（回到目录）"><span class="nav-number">61.</span> <span class="nav-text">110 平衡二叉树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#112-路径之和（二叉树）（回到目录）"><span class="nav-number">62.</span> <span class="nav-text">112 路径之和（二叉树）（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#118-杨辉三角"><span class="nav-number">63.</span> <span class="nav-text">118 杨辉三角</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#119-杨辉三角II（回到目录）"><span class="nav-number">64.</span> <span class="nav-text">119 杨辉三角II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#125-验证回文串（回到目录）"><span class="nav-number">65.</span> <span class="nav-text">125 验证回文串（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#121-买卖股票的最佳时机（回到目录）"><span class="nav-number">66.</span> <span class="nav-text">121 买卖股票的最佳时机（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#134-加油站"><span class="nav-number">67.</span> <span class="nav-text">134 加油站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#135-分发糖果（回到目录）"><span class="nav-number">68.</span> <span class="nav-text">135 分发糖果（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#136-只出现一次的数字"><span class="nav-number">69.</span> <span class="nav-text">136 只出现一次的数字</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#我的做法"><span class="nav-number">69.0.1.</span> <span class="nav-text">我的做法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按位异或"><span class="nav-number">69.0.2.</span> <span class="nav-text">按位异或</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#137-只出现一次的数字II（回到目录）"><span class="nav-number">70.</span> <span class="nav-text">137 只出现一次的数字II（回到目录）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#我的做法-1"><span class="nav-number">70.0.1.</span> <span class="nav-text">我的做法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#位运算"><span class="nav-number">70.0.2.</span> <span class="nav-text">位运算</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#141-环形链表（回到目录）"><span class="nav-number">71.</span> <span class="nav-text">141 环形链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#142-环形链表II"><span class="nav-number">72.</span> <span class="nav-text">142 环形链表II</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#144-二叉树的前序遍历"><span class="nav-number">73.</span> <span class="nav-text">144 二叉树的前序遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#递归方法-1"><span class="nav-number">73.1.</span> <span class="nav-text">递归方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代方法-1"><span class="nav-number">73.2.</span> <span class="nav-text">迭代方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#145-二叉树的后序遍历"><span class="nav-number">74.</span> <span class="nav-text">145 二叉树的后序遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#递归方法-2"><span class="nav-number">74.1.</span> <span class="nav-text">递归方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代法"><span class="nav-number">74.2.</span> <span class="nav-text">迭代法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#160-求两个链表的交点。-回到目录"><span class="nav-number">75.</span> <span class="nav-text">160 求两个链表的交点。(回到目录)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#169-求众数"><span class="nav-number">76.</span> <span class="nav-text">169 求众数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#189-旋转数组"><span class="nav-number">77.</span> <span class="nav-text">189 旋转数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#191-位1的个数"><span class="nav-number">78.</span> <span class="nav-text">191 位1的个数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#199-二叉树的右视图（回到目录）"><span class="nav-number">79.</span> <span class="nav-text">199 二叉树的右视图（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#206-反转链表（回到目录）"><span class="nav-number">80.</span> <span class="nav-text">206 反转链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#215-数组中的第k个最大元素"><span class="nav-number">81.</span> <span class="nav-text">215 数组中的第k个最大元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#225-用队列实现栈"><span class="nav-number">82.</span> <span class="nav-text">225 用队列实现栈</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#226-翻转二叉树（回到目录）"><span class="nav-number">83.</span> <span class="nav-text">226 翻转二叉树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#258-各位相加（回到目录）"><span class="nav-number">84.</span> <span class="nav-text">258 各位相加（回到目录）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#递归方法-3"><span class="nav-number">84.1.</span> <span class="nav-text">递归方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环方法"><span class="nav-number">84.2.</span> <span class="nav-text">循环方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#295-数据流的中位数（回到目录）"><span class="nav-number">85.</span> <span class="nav-text">295 数据流的中位数（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#315-计算右侧小于当前元素的个数（回到目录）"><span class="nav-number">86.</span> <span class="nav-text">315 计算右侧小于当前元素的个数（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#389-找不同"><span class="nav-number">87.</span> <span class="nav-text">389 找不同</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#402-移掉k个数字（回到目录）"><span class="nav-number">88.</span> <span class="nav-text">402 移掉k个数字（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#414-第三大的数"><span class="nav-number">89.</span> <span class="nav-text">414 第三大的数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#520-检测大写字母（回到目录）"><span class="nav-number">90.</span> <span class="nav-text">520 检测大写字母（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#633-平方数之和"><span class="nav-number">91.</span> <span class="nav-text">633 平方数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#784-字母大小写全排列（回到目录）"><span class="nav-number">92.</span> <span class="nav-text">784 字母大小写全排列（回到目录）</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -1209,6 +1035,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
