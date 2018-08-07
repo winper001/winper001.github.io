@@ -4,83 +4,24 @@
   
     
     <entry>
-      <title></title>
-      <url>https://winper001.github.io/2018/08/07/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%85%A5%E9%97%A8%E6%94%BB%E7%95%A5/</url>
-      <content type="html"><![CDATA[<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>[toc]</p>
-<h1 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h1><blockquote>
-<p>我们开始愿意为内容付费，而不愿意为了省钱，去花费时间搜索各种盗版内容——因为时间开始值钱了</p>
-<p>逻辑思维：移动互联网用户增速开始放缓，一切饱和之后，未来一切商业的战场都是时间的战场</p>
-<p>互联网对世界最大的改变是加速了物理世界运行的速度，因为互联网让信息传递速度变快了</p>
-<p>一个人不可能走出他完全不知道的道路，一个人也不可能成长为他完全没有概念的那种人</p>
-</blockquote>
-<h1 id="启发"><a href="#启发" class="headerlink" title="启发"></a>启发</h1><ul>
-<li>以服务用户为出发点，做好服务，用户才会买单</li>
-<li>目标和方法</li>
-</ul>
-<h1 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h1><blockquote>
-<p>什么是数据产品（发展方向）</p>
-</blockquote>
-<h1 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h1><ul>
-<li><p>电商，图片搜索，阿里有提供api <br><br><a href="https://help.aliyun.com/document_detail/85153.html?spm=a2c4g.11186623.6.541.1OEGnQ" target="_blank" rel="external">https://help.aliyun.com/document_detail/85153.html?spm=a2c4g.11186623.6.541.1OEGnQ</a></p>
-</li>
-<li><p>很全的支付方式设计<br><br><a href="http://blog.lixf.cn/essay/2018/03/10/refund/" target="_blank" rel="external">http://blog.lixf.cn/essay/2018/03/10/refund/</a></p>
-</li>
-<li><p>微信支付是支持单个订单多次退款的，但是退款要生成多个退款单号,所以他是以退款单号为判断依据的<br><br><a href="https://blog.csdn.net/zyw_java/article/details/79370616" target="_blank" rel="external">https://blog.csdn.net/zyw_java/article/details/79370616</a></p>
-</li>
-<li><p>去看一下微信开放平台和公众平台的相关文档，包括开发文档、设计说明、运营说明那些<br></p>
-</li>
-<li><p>axure基础教程<br><br><a href="https://www.axure.com.cn/category/axure/course/" target="_blank" rel="external">https://www.axure.com.cn/category/axure/course/</a></p>
-</li>
-</ul>
-<h1 id="产品经理素质和技能要求"><a href="#产品经理素质和技能要求" class="headerlink" title="产品经理素质和技能要求"></a>产品经理素质和技能要求</h1><h2 id="素质要求"><a href="#素质要求" class="headerlink" title="素质要求"></a>素质要求</h2><ul>
-<li>沟通表达能力和团队合作能力<blockquote>
-<p>推动整个产品的进展，需要和（客户）、技术、设计、运营等各个岗位的人进行沟通</p>
-</blockquote>
-</li>
-</ul>
-<ul>
-<li>逻辑思考能力和创新精神<blockquote>
-<p>把我用户需求，设计并指导产品走向</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="基本要求"><a href="#基本要求" class="headerlink" title="基本要求"></a>基本要求</h2><ul>
-<li>需求调研和需求分析能力</li>
-<li>文档撰写能力</li>
-<li>项目管理能力</li>
-</ul>
-<h2 id="进阶要求"><a href="#进阶要求" class="headerlink" title="进阶要求"></a>进阶要求</h2><ul>
-<li>数据分析能力</li>
-<li>商业分析能力</li>
-<li>产品规划能力</li>
-<li>运营能力</li>
-<li>团队管理能力</li>
-</ul>
-<p>什么事情都亲力亲为，你会拉低整个团队的效率，你必须学会分配任务，安排好每个团队成员的工作，管理者是主动的，当然，安排任务有技巧，就像交接任务一样，你必须把工作重要性、工作流程、工作目标、注意事项告诉团队成员，他们才知道如何去做，完成到什么程度</p>
-<h2 id="企业要求（回到目录）"><a href="#企业要求（回到目录）" class="headerlink" title="企业要求（回到目录）"></a>企业要求（<a href="#目录"><font size="3" face="微软雅黑">回到目录</font></a>）</h2><ul>
-<li>做事能力（沟通、团队合作）</li>
-<li>逻辑思考和创新精神</li>
-<li>自我管理</li>
-</ul>
-<h1 id="书籍内容索引"><a href="#书籍内容索引" class="headerlink" title="书籍内容索引"></a>书籍内容索引</h1><ul>
-<li>产品生命周期的概念</li>
-</ul>
-<p>如何通过把握产品生命周期，推动产品发展。————产品定义：产品有腔调</p>
-<h1 id="方法论"><a href="#方法论" class="headerlink" title="方法论"></a>方法论</h1><p><strong>目标管理</strong></p>
-<p><strong>量化执行</strong></p>
-<p><strong>进程控制</strong></p>
-<p><strong>验收迭代</strong></p>
-<h1 id="目前的工作内容"><a href="#目前的工作内容" class="headerlink" title="目前的工作内容"></a>目前的工作内容</h1><ul>
-<li>根据需求完成原型，跟进开发，测试，整理产品资料（原型，前端功能说明表，后台功能说明表，功能结构图，业务流程图，需求变更表，后台操作文档，第三方资料）</li>
-</ul>
-<h1 id="目前的工作收获"><a href="#目前的工作收获" class="headerlink" title="目前的工作收获"></a>目前的工作收获</h1>]]></content>
+      <title><![CDATA[2016考研政治经验贴]]></title>
+      <url>https://winper001.github.io/2016/08/08/2016%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB%E7%BB%8F%E9%AA%8C%E8%B4%B4/</url>
+      <content type="html"><![CDATA[<h1 id="2016考研政治随谈"><a href="#2016考研政治随谈" class="headerlink" title="2016考研政治随谈"></a>2016考研政治随谈</h1><p>本人winper，考的是华南理工大学电信学院的电子与通信工程。考研政治的分数是81，这个分数听起来是挺高的，但是要考取这个分数并不是很难。原因有二：一是今年的政治相对简单，二是存在泄题的现象。对于我本人来说，政治是我四科之中最有信心的学科，这也得益于我平时的政治素养吧。例如大学这几年的有关于政治的课程（思修，近现代史，毛概）上课的时候就很认真，以及平时也很喜欢看一些历史书籍，经常关注我党的理论动态和政策措施，并且我也会经常思考（建议大家在复习之余，也多多关注时事动态，多多思考和感悟）。另外，我记得考完政治之后，对了一下石磊的答案，选择题仅仅是错了一个单项（49分），那也可以得知今年的大题可能存在压分的情况。综上所述，当我自己看到这个分数时，并不吃惊，反而略显失望。<br>好了，下面我简单的介绍一下我去年的政治复习经验和心得。</p>
+<p>首先我先说下，我所有的资料：知识点精讲精练，1000题，8套卷，4套卷，肖秀荣真题，风中劲草核心考点，石磊的马原讲解视频和讲义。</p>
+<p>我大概是九月底十月初开始复习政治，这个阶段只用复习客观题。那时候用的是肖秀荣的《知识点精讲精炼》和《1000题》结合使用的。很多人会觉得那本《知识点精讲精练》太厚了，怎么看的完呢。对于这个问题，我只能说完全看个人！我是这么想的，那本知识点教材是服务于我做1000题的，我做一千题时候，遇到不会的，我不是直接看答案，而是在书里查找，实在找不到的就翻答案（不过一般都能找到）。有些重点题，我会做标记以示自己应该特别注意。当然1000题的每一章之前，我就会先把书本看一遍（其实就当看课外书一样还是蛮不错的，建议大家也这么做）。当完整的把1000题做完一遍之后，就会发现以前做过的题目也忘得差不多了。没关系，再做一遍！这一遍的时候肯定比第一次快和熟练，我一般对做过的题目印象会很深刻，当然第一遍做的时候很模糊的题，第二遍做依然模糊。所以这种模糊题和错题，就要特别的注意！这个阶段，我在刷题的同时，也还在看风中劲草核心考点，我觉得这本书写的特别好，5门课都浓缩在了一起，选择题和分析题的答题重点都标注的很清楚。对于这本书，建议大家把它至少看两遍！它可以帮大家梳理各科的知识脉络和形成一个知识体系！第一遍复习时，有些科目确实是比较难的。例如马原的政治经济学，对于广大的工科生来说，就是一个大坑，然而这块知识点每年必考，大约有6分左右。所以大家一定要复习好。主要是理解为主，建议大家可以看看石磊的马原课程中的政治经济学部分，个人感觉他讲的确实通俗易懂，出神入化。加上自己的思考和总结，再去做那些选择题就会发现很容易。</p>
+<p>到11月份，还算是客观题的复习阶段，如果大家觉得1000题已经看起来没有挑战性了。我建议可以买那本风中劲草的习题，那个题目量很大，但是出题出的很细很广。有空可以把它刷一遍。没有时间的话，那就不做这个题了，直接做真题的客观题。真题我选择的是肖老的书。我觉得它的真题写的特好。他的真题里面有知识点表，是对应于真题的考察的知识点所在。做第一遍的时候，一定要认真，把遗漏的或者自己模糊的知识点要查清楚，可以把他列的所有表格都看一遍或者有些直接背诵，相当有好处。总之，真题的选择题一定要多做几遍！做题同时，不能忘记及时抽空复习知识点（以风中劲草核心考点和肖秀荣真题的知识点表格为主！尤其是要考背诵的考点，如事件的时间和地点等）。</p>
+<p>说了这么多，大家可能会很着急，我们把全部精力放在了客观题上，主观题怎么办？其实大家不用担心。我觉得大题更多的是考大家的个人素养。其实我们在复习选择题的时候本身就是在不断地重复考点，所以在复习选择题时候一定要细心，不能急躁，花再多的时间都不为过！</p>
+<p>真正开始复习大题，我是从11月底开始！首先是对付真题的大题。说实话，真题的大题我一题都没写过，只是全部看了一下，为啥，因为我觉得没有必要。真题的的分析题看是一定要看的。我建议这么做，题干看完之后，自己可以脑子想想答题思路，想不出来直接看答案，对比下人家的思路。当你把所有的大题都过玩一遍的时候你就会发现，其实官方参考答案都是有套路的。例如：第一大题就是马原的哲学题，无非就是那些原理，结合一些材料去辩证的分析下；近现代史题，就多多的赞扬我党的好等等。好好分析，都是有套路的！不过，像那道哲学题，大家还是要自己先去把那些原理方法论总结出来背一背会更有把握！这个阶段，主要把心思花在8套卷和4套卷，还有要看看石磊的20天20题。把这些题目都分析一遍！尤其是四套卷，无论是选择题还是主观题一定要背的滚瓜烂熟。就拿今年来说，我觉得四套卷的答案好多都能用上，石磊的20天20题也完全压中马原的那道大题！反正我写起来特别顺。当然，也有很多同学说，答案写的不长。其实我觉得还是背的不够熟练的原因，没有大量的输入哪有输出嘛？！所以哦，在十二月份一定要全力以赴的开始背答题了！我一般是早上花一个小时背，晚上再花一个小时背诵或者复习。当然，这个阶段，客观题的复习不能忘了！！！！</p>
+<p>对了还有时事政治的选择题，2单2双，加起来有6分。这个完全是靠记忆了。没办法！但是还是有复习方法的！建议大家去网上搜一些资料或者有些考研辅导机构他们会出时事政治选择题的书，可以采取刷题背答案的策略，多找一些题目！相信我，一定能撞上原题的！</p>
+<p>我就是以这么一种方式去学习考研政治的额，最后还算是取得了不错的成绩。</p>
+<p>最后，我统一回答几个大众困惑：<br>1，  要不要报班？<br>我建议可以不用，烧钱。但是可以去网上下载视频去听一听课，例如石磊的冲刺课，肖秀荣的冲刺课程，听完之后自己也会自信些。<br>2，  政治时间如何安排<br>我建议12月份以前，2小时左右为宜，12月份冲刺阶段至少要有3小时。不同意的，看个人。<br>暂时想不起来了。。。。。。亲们还有其他问题,可以联系QQ1048784174</p>
+]]></content>
     </entry>
     
     <entry>
-      <title></title>
-      <url>https://winper001.github.io/2018/08/07/leetcode%E5%88%B7%E9%A2%98A/</url>
-      <content type="html"><![CDATA[<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>[toc]</p>
-<h1 id="1-两数之和"><a href="#1-两数之和" class="headerlink" title="1 两数之和"></a>1 两数之和</h1><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p>
+      <title><![CDATA[leetcode刷题A部分]]></title>
+      <url>https://winper001.github.io/2016/08/08/leetcode%E5%88%B7%E9%A2%98A/</url>
+      <content type="html"><![CDATA[<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><h1 id="1-两数之和"><a href="#1-两数之和" class="headerlink" title="1 两数之和"></a>1 两数之和</h1><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p>
 <p>你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。</p>
 <p>示例:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">给定 nums = [2, 7, 11, 15], target = 9</div><div class="line"></div><div class="line">因为 nums[0] + nums[1] = 2 + 7 = 9</div><div class="line">所以返回 [0, 1]</div></pre></td></tr></table></figure></p>
 <p>我的做法如下，直接暴力，复杂度是O(n2)，我们试图通过遍历数组的其余部分来寻找它对应的目标，这将耗费O(n)*O(n)的时间。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; twoSum(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> target) </div><div class="line">    &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.size()<span class="number">-1</span>;i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;nums.size();j++)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">if</span>(nums[i]+nums[j]==target)</div><div class="line">                &#123;</div><div class="line">                    res.push_back(i);</div><div class="line">                    res.push_back(j);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">else</span></div><div class="line">                &#123;</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
@@ -453,21 +394,6 @@
 <h1 id="784-字母大小写全排列（回到目录）"><a href="#784-字母大小写全排列（回到目录）" class="headerlink" title="784 字母大小写全排列（回到目录）"></a>784 字母大小写全排列（<a href="#目录"><font size="3" face="微软雅黑">回到目录</font></a>）</h1><p>给定一个字符串S，通过将字符串S中的每个字母转变大小写，我们可以获得一个新的字符串。返回所有可能得到的字符串集合。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">示例:</div><div class="line">输入: S = &quot;a1b2&quot;</div><div class="line">输出: [&quot;a1b2&quot;, &quot;a1B2&quot;, &quot;A1b2&quot;, &quot;A1B2&quot;]</div><div class="line"></div><div class="line">输入: S = &quot;3z4&quot;</div><div class="line">输出: [&quot;3z4&quot;, &quot;3Z4&quot;]</div><div class="line"></div><div class="line">输入: S = &quot;12345&quot;</div><div class="line">输出: [&quot;12345&quot;]</div><div class="line"></div><div class="line">**注意**：</div><div class="line"></div><div class="line">S 的长度不超过12。</div><div class="line"></div><div class="line">S 仅由数字和字母组成。</div></pre></td></tr></table></figure></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">char</span> <span class="title">chang_upOrLow</span><span class="params">(<span class="keyword">char</span> s)</span><span class="comment">//递归</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">char</span> res;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'A'</span> &amp;&amp; s&lt;=<span class="string">'Z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s+<span class="number">32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'a'</span> &amp;&amp; s&lt;=<span class="string">'z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s<span class="number">-32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">generate</span><span class="params">(<span class="built_in">string</span> &amp;S,<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; &amp;res,<span class="keyword">int</span> index)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(index&gt;=S.size())</div><div class="line">    &#123;</div><div class="line">        res.push_back(S);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span>((S[index]&gt;=<span class="string">'a'</span> &amp;&amp; S[index]&lt;=<span class="string">'z'</span>) ||(S[index]&gt;=<span class="string">'A'</span> &amp;&amp; S[index]&lt;=<span class="string">'Z'</span>)) </div><div class="line">    <span class="comment">//if(S[index]&gt;='A' &amp;&amp; S[index]&lt;='z')</span></div><div class="line">    &#123;</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">    &#125;</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">    </div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; letterCasePermutation(<span class="built_in">string</span> S) </div><div class="line">    &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; res;</div><div class="line">        generate(S,res,<span class="number">0</span>);</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 <p><strong>或者</strong>：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">char</span> <span class="title">chang_upOrLow</span><span class="params">(<span class="keyword">char</span> s)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">char</span> res;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'A'</span> &amp;&amp; s&lt;=<span class="string">'Z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s+<span class="number">32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'a'</span> &amp;&amp; s&lt;=<span class="string">'z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s<span class="number">-32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">generate</span><span class="params">(<span class="built_in">string</span> &amp;S,<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; &amp;res,<span class="keyword">int</span> index)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(index&gt;=S.size())</div><div class="line">    &#123;</div><div class="line">        res.push_back(S);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span>((S[index]&gt;=<span class="string">'a'</span> &amp;&amp; S[index]&lt;=<span class="string">'z'</span>) ||(S[index]&gt;=<span class="string">'A'</span> &amp;&amp; S[index]&lt;=<span class="string">'Z'</span>)) </div><div class="line">    <span class="comment">//if(S[index]&gt;='A' &amp;&amp; S[index]&lt;='z')</span></div><div class="line">    &#123;</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span></div><div class="line">    &#123;</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; letterCasePermutation(<span class="built_in">string</span> S) </div><div class="line">    &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; res;</div><div class="line">        generate(S,res,<span class="number">0</span>);</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[2016考研政治经验贴]]></title>
-      <url>https://winper001.github.io/2016/08/08/2016%E8%80%83%E7%A0%94%E6%94%BF%E6%B2%BB%E7%BB%8F%E9%AA%8C%E8%B4%B4/</url>
-      <content type="html"><![CDATA[<h1 id="2016考研政治随谈"><a href="#2016考研政治随谈" class="headerlink" title="2016考研政治随谈"></a>2016考研政治随谈</h1><p>本人winper，考的是华南理工大学电信学院的电子与通信工程。考研政治的分数是81，这个分数听起来是挺高的，但是要考取这个分数并不是很难。原因有二：一是今年的政治相对简单，二是存在泄题的现象。对于我本人来说，政治是我四科之中最有信心的学科，这也得益于我平时的政治素养吧。例如大学这几年的有关于政治的课程（思修，近现代史，毛概）上课的时候就很认真，以及平时也很喜欢看一些历史书籍，经常关注我党的理论动态和政策措施，并且我也会经常思考（建议大家在复习之余，也多多关注时事动态，多多思考和感悟）。另外，我记得考完政治之后，对了一下石磊的答案，选择题仅仅是错了一个单项（49分），那也可以得知今年的大题可能存在压分的情况。综上所述，当我自己看到这个分数时，并不吃惊，反而略显失望。<br>好了，下面我简单的介绍一下我去年的政治复习经验和心得。</p>
-<p>首先我先说下，我所有的资料：知识点精讲精练，1000题，8套卷，4套卷，肖秀荣真题，风中劲草核心考点，石磊的马原讲解视频和讲义。</p>
-<p>我大概是九月底十月初开始复习政治，这个阶段只用复习客观题。那时候用的是肖秀荣的《知识点精讲精炼》和《1000题》结合使用的。很多人会觉得那本《知识点精讲精练》太厚了，怎么看的完呢。对于这个问题，我只能说完全看个人！我是这么想的，那本知识点教材是服务于我做1000题的，我做一千题时候，遇到不会的，我不是直接看答案，而是在书里查找，实在找不到的就翻答案（不过一般都能找到）。有些重点题，我会做标记以示自己应该特别注意。当然1000题的每一章之前，我就会先把书本看一遍（其实就当看课外书一样还是蛮不错的，建议大家也这么做）。当完整的把1000题做完一遍之后，就会发现以前做过的题目也忘得差不多了。没关系，再做一遍！这一遍的时候肯定比第一次快和熟练，我一般对做过的题目印象会很深刻，当然第一遍做的时候很模糊的题，第二遍做依然模糊。所以这种模糊题和错题，就要特别的注意！这个阶段，我在刷题的同时，也还在看风中劲草核心考点，我觉得这本书写的特别好，5门课都浓缩在了一起，选择题和分析题的答题重点都标注的很清楚。对于这本书，建议大家把它至少看两遍！它可以帮大家梳理各科的知识脉络和形成一个知识体系！第一遍复习时，有些科目确实是比较难的。例如马原的政治经济学，对于广大的工科生来说，就是一个大坑，然而这块知识点每年必考，大约有6分左右。所以大家一定要复习好。主要是理解为主，建议大家可以看看石磊的马原课程中的政治经济学部分，个人感觉他讲的确实通俗易懂，出神入化。加上自己的思考和总结，再去做那些选择题就会发现很容易。</p>
-<p>到11月份，还算是客观题的复习阶段，如果大家觉得1000题已经看起来没有挑战性了。我建议可以买那本风中劲草的习题，那个题目量很大，但是出题出的很细很广。有空可以把它刷一遍。没有时间的话，那就不做这个题了，直接做真题的客观题。真题我选择的是肖老的书。我觉得它的真题写的特好。他的真题里面有知识点表，是对应于真题的考察的知识点所在。做第一遍的时候，一定要认真，把遗漏的或者自己模糊的知识点要查清楚，可以把他列的所有表格都看一遍或者有些直接背诵，相当有好处。总之，真题的选择题一定要多做几遍！做题同时，不能忘记及时抽空复习知识点（以风中劲草核心考点和肖秀荣真题的知识点表格为主！尤其是要考背诵的考点，如事件的时间和地点等）。</p>
-<p>说了这么多，大家可能会很着急，我们把全部精力放在了客观题上，主观题怎么办？其实大家不用担心。我觉得大题更多的是考大家的个人素养。其实我们在复习选择题的时候本身就是在不断地重复考点，所以在复习选择题时候一定要细心，不能急躁，花再多的时间都不为过！</p>
-<p>真正开始复习大题，我是从11月底开始！首先是对付真题的大题。说实话，真题的大题我一题都没写过，只是全部看了一下，为啥，因为我觉得没有必要。真题的的分析题看是一定要看的。我建议这么做，题干看完之后，自己可以脑子想想答题思路，想不出来直接看答案，对比下人家的思路。当你把所有的大题都过玩一遍的时候你就会发现，其实官方参考答案都是有套路的。例如：第一大题就是马原的哲学题，无非就是那些原理，结合一些材料去辩证的分析下；近现代史题，就多多的赞扬我党的好等等。好好分析，都是有套路的！不过，像那道哲学题，大家还是要自己先去把那些原理方法论总结出来背一背会更有把握！这个阶段，主要把心思花在8套卷和4套卷，还有要看看石磊的20天20题。把这些题目都分析一遍！尤其是四套卷，无论是选择题还是主观题一定要背的滚瓜烂熟。就拿今年来说，我觉得四套卷的答案好多都能用上，石磊的20天20题也完全压中马原的那道大题！反正我写起来特别顺。当然，也有很多同学说，答案写的不长。其实我觉得还是背的不够熟练的原因，没有大量的输入哪有输出嘛？！所以哦，在十二月份一定要全力以赴的开始背答题了！我一般是早上花一个小时背，晚上再花一个小时背诵或者复习。当然，这个阶段，客观题的复习不能忘了！！！！</p>
-<p>对了还有时事政治的选择题，2单2双，加起来有6分。这个完全是靠记忆了。没办法！但是还是有复习方法的！建议大家去网上搜一些资料或者有些考研辅导机构他们会出时事政治选择题的书，可以采取刷题背答案的策略，多找一些题目！相信我，一定能撞上原题的！</p>
-<p>我就是以这么一种方式去学习考研政治的额，最后还算是取得了不错的成绩。</p>
-<p>最后，我统一回答几个大众困惑：<br>1，  要不要报班？<br>我建议可以不用，烧钱。但是可以去网上下载视频去听一听课，例如石磊的冲刺课，肖秀荣的冲刺课程，听完之后自己也会自信些。<br>2，  政治时间如何安排<br>我建议12月份以前，2小时左右为宜，12月份冲刺阶段至少要有3小时。不同意的，看个人。<br>暂时想不起来了。。。。。。亲们还有其他问题,可以联系QQ1048784174</p>
 ]]></content>
     </entry>
     
