@@ -1,368 +1,157 @@
 <!doctype html>
-
-
-
+<html class="theme-next use-motion theme-next-next">
+<head>
   
 
-
-<html class="theme-next mist use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.0"/>
+
+
+    <meta name="description" content="不要留恋哥，哥只是个传说！" />
 
 
 
+	<meta name="keywords" content="leetcode," />
 
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="leetcode," />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
-
-
-
-
-
-
-<meta name="description" content="目录1 两数之和给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
-你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
-示例:1234给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1]
-我的做法如下，直接暴力，复杂度是O(n2)，我们试图通过遍历数组的其余部分来寻找它对">
-<meta property="og:type" content="article">
-<meta property="og:title" content="leetcode刷题A部分">
-<meta property="og:url" content="https://winper001.github.io/2018/08/07/leetcode刷题A/index.html">
-<meta property="og:site_name" content="winper001">
-<meta property="og:description" content="目录1 两数之和给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
-你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
-示例:1234给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1]
-我的做法如下，直接暴力，复杂度是O(n2)，我们试图通过遍历数组的其余部分来寻找它对">
-<meta property="og:image" content="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg">
-<meta property="og:image" content="http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Telephone-keypad2.svg/200px-Telephone-keypad2.svg.png">
-<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif">
-<meta property="og:updated_time" content="2018-08-07T14:55:06.374Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leetcode刷题A部分">
-<meta name="twitter:description" content="目录1 两数之和给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
-你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
-示例:1234给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1]
-我的做法如下，直接暴力，复杂度是O(n2)，我们试图通过遍历数组的其余部分来寻找它对">
-<meta name="twitter:image" content="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Mist',
-    sidebar: {"position":"right","display":"always"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 6316319646639195000,
-      author: '旺仔鹏崽是个传说'
-    }
-  };
-</script>
-
-  <title> leetcode刷题A部分 | winper001 </title>
+  <title> leetcode刷题A部分 // winper001 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-right page-post-detail ">
+<body>
+  <div class="container one-column page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
       <span class="site-title">winper001</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-  <p class="site-subtitle">什么东西哎</p>
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="#" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
-</div>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
 
 
+  <ul id="menu" class="menu">
+    
+      
+      <li class="menu-item menu-item-home">
+        <a href="/首页">
+          <i class="menu-item-icon icon-home"></i> <br />
+          首页
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-categories">
+        <a href="/分类">
+          <i class="menu-item-icon icon-categories"></i> <br />
+          分类
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-tags">
+        <a href="/标签">
+          <i class="menu-item-icon icon-tags"></i> <br />
+          标签
+        </a>
+      </li>
+    
+      
+      <li class="menu-item menu-item-about">
+        <a href="/关于">
+          <i class="menu-item-icon icon-about"></i> <br />
+          关于
+        </a>
+      </li>
+    
+  </ul>
+
+
+      </div>
     </div>
-  
-</nav>
 
- </div>
-    </header>
-
-    <main id="main" class="main">
+    <div id="main" class="main">
       <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
+        <div id="content" class="content">
+          
             
+          
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-  
-
-  
-  
+          <div id="posts" class="posts-expand">
+            
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <div class="post post-type-normal ">
+    <div class="post-header">
 
-    
-      <header class="post-header">
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              leetcode刷题A部分
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          
+            发表于 2018-08-07
+          
+        </span>
 
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+          
+            <span class="post-category">
+              &nbsp; | &nbsp; 分类于
               
-                leetcode刷题A部分
-              
-            
-          </h1>
-        
+                <a href="/categories/leetcode/">leetcode</a>
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
+                
+                
+
+              
             </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2018-08-07T22:48:43+08:00" content="2018-08-07">
-              2018-08-07
-            </time>
+          
+        
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2018/08/07/leetcode刷题A/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2018/08/07/leetcode刷题A/"></span>
+            </a>
           </span>
+          
+        
+      </div>
+    </div>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/leetcode/" itemprop="url" rel="index">
-                    <span itemprop="name">leetcode</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2018/08/07/leetcode刷题A/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/08/07/leetcode刷题A/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2018/08/07/leetcode刷题A/" class="leancloud_visitors" data-flag-title="leetcode刷题A部分">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
     
+      <div class="post-body">
 
+        
+        
 
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><h1 id="1-两数之和"><a href="#1-两数之和" class="headerlink" title="1 两数之和"></a>1 两数之和</h1><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p>
+        
+          <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><h1 id="1-两数之和"><a href="#1-两数之和" class="headerlink" title="1 两数之和"></a>1 两数之和</h1><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p>
 <p>你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。</p>
 <p>示例:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">给定 nums = [2, 7, 11, 15], target = 9</div><div class="line"></div><div class="line">因为 nums[0] + nums[1] = 2 + 7 = 9</div><div class="line">所以返回 [0, 1]</div></pre></td></tr></table></figure></p>
 <p>我的做法如下，直接暴力，复杂度是O(n2)，我们试图通过遍历数组的其余部分来寻找它对应的目标，这将耗费O(n)*O(n)的时间。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; twoSum(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums, <span class="keyword">int</span> target) </div><div class="line">    &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.size()<span class="number">-1</span>;i++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i+<span class="number">1</span>;j&lt;nums.size();j++)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">if</span>(nums[i]+nums[j]==target)</div><div class="line">                &#123;</div><div class="line">                    res.push_back(i);</div><div class="line">                    res.push_back(j);</div><div class="line">                &#125;</div><div class="line">                <span class="keyword">else</span></div><div class="line">                &#123;</div><div class="line">                    <span class="keyword">continue</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
@@ -736,253 +525,147 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">char</span> <span class="title">chang_upOrLow</span><span class="params">(<span class="keyword">char</span> s)</span><span class="comment">//递归</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">char</span> res;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'A'</span> &amp;&amp; s&lt;=<span class="string">'Z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s+<span class="number">32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'a'</span> &amp;&amp; s&lt;=<span class="string">'z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s<span class="number">-32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">generate</span><span class="params">(<span class="built_in">string</span> &amp;S,<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; &amp;res,<span class="keyword">int</span> index)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(index&gt;=S.size())</div><div class="line">    &#123;</div><div class="line">        res.push_back(S);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span>((S[index]&gt;=<span class="string">'a'</span> &amp;&amp; S[index]&lt;=<span class="string">'z'</span>) ||(S[index]&gt;=<span class="string">'A'</span> &amp;&amp; S[index]&lt;=<span class="string">'Z'</span>)) </div><div class="line">    <span class="comment">//if(S[index]&gt;='A' &amp;&amp; S[index]&lt;='z')</span></div><div class="line">    &#123;</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">    &#125;</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">    </div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; letterCasePermutation(<span class="built_in">string</span> S) </div><div class="line">    &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; res;</div><div class="line">        generate(S,res,<span class="number">0</span>);</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
 <p><strong>或者</strong>：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">char</span> <span class="title">chang_upOrLow</span><span class="params">(<span class="keyword">char</span> s)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">char</span> res;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'A'</span> &amp;&amp; s&lt;=<span class="string">'Z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s+<span class="number">32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(s&gt;=<span class="string">'a'</span> &amp;&amp; s&lt;=<span class="string">'z'</span>)</div><div class="line">        &#123;</div><div class="line">            res=s<span class="number">-32</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">generate</span><span class="params">(<span class="built_in">string</span> &amp;S,<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; &amp;res,<span class="keyword">int</span> index)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span>(index&gt;=S.size())</div><div class="line">    &#123;</div><div class="line">        res.push_back(S);</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span>((S[index]&gt;=<span class="string">'a'</span> &amp;&amp; S[index]&lt;=<span class="string">'z'</span>) ||(S[index]&gt;=<span class="string">'A'</span> &amp;&amp; S[index]&lt;=<span class="string">'Z'</span>)) </div><div class="line">    <span class="comment">//if(S[index]&gt;='A' &amp;&amp; S[index]&lt;='z')</span></div><div class="line">    &#123;</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">        S[index]=chang_upOrLow(S[index]);</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span></div><div class="line">    &#123;</div><div class="line">        generate(S,res,index+<span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; letterCasePermutation(<span class="built_in">string</span> S) </div><div class="line">    &#123;</div><div class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt; res;</div><div class="line">        generate(S,res,<span class="number">0</span>);</div><div class="line">        <span class="keyword">return</span> res;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
 
-      
-    </div>
-
-    <div>
-      
         
-<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
-    <img id="wechat_subscriber_qcode" src="/images/weixin.png" alt="winper wechat" style="width: 200px; max-width: 100%;"/>
-    <div>欢迎你的交流！————winper</div>
-</div>
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/leetcode/" rel="tag">#leetcode</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/08/08/2016考研政治经验贴/" rel="next" title="2016考研政治经验贴">
-                <i class="fa fa-chevron-left"></i> 2016考研政治经验贴
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/08/leetcode刷题B/" rel="prev" title="leetcode刷题B部分">
-                leetcode刷题B部分 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-        <div class="ds-share flat" data-thread-key="2018/08/07/leetcode刷题A/"
-     data-title="leetcode刷题A部分"
-     data-content=""
-     data-url="https://winper001.github.io/2018/08/07/leetcode刷题A/">
-  <div class="ds-share-inline">
-    <ul  class="ds-share-icons-16">
-
-      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-
-    </ul>
-    <div class="ds-share-icons-more">
-    </div>
-  </div>
-</div>
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
+      </div>
     
-      <div class="ds-thread" data-thread-key="2018/08/07/leetcode刷题A/"
-           data-title="leetcode刷题A部分" data-url="https://winper001.github.io/2018/08/07/leetcode刷题A/">
+
+    
+      <div class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/leetcode/">
+                #leetcode
+              </a>
+            
+          </div>
+        
+
+        
+          <div class="post-nav">
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2018/08/08/leetcode刷题B/">leetcode刷题B部分</a>
+              
+            </div>
+
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2016/08/08/2016考研政治经验贴/">2016考研政治经验贴</a>
+              
+            </div>
+          </div>
+        
+
+        
+        
       </div>
     
   </div>
 
 
-        </div>
-        
-          
+
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    <div class="comments" id="comments">
+      
+        <div class="ds-thread" data-thread-key="2018/08/07/leetcode刷题A/"
+             data-title="leetcode刷题A部分" data-url="https://winper001.github.io/2018/08/07/leetcode刷题A/">
+        </div>
+
+      
     </div>
+  
+
+          </div>
+
+          
+        </div>
+
+        
+<div class="sidebar-toggle">
+  <div class="sidebar-toggle-line-wrap">
+    <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+    <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
   </div>
+</div>
 
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
+<div id="sidebar" class="sidebar">
+  <div class="sidebar-inner">
 
-      
+    
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview" data-target="site-overview">
+          站点概览
+        </li>
+      </ul>
+    
 
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/winper.png"
-               alt="winper" />
-          <p class="site-author-name" itemprop="name">winper</p>
-          <p class="site-description motion-element" itemprop="description">不要留恋哥，哥只是个传说！</p>
+    <div class="site-overview">
+      <div class="site-author motion-element">
+        <img class="site-author-image" src="http://example.com/winper.png" alt="winper" />
+        <p class="site-author-name">winper</p>
+      </div>
+      <p class="site-description motion-element">不要留恋哥，哥只是个传说！</p>
+      <div class="site-state motion-element">
+        <div class="site-state-item site-state-posts">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
         </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">4</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/winper001" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                  GitHub
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/wang-peng-42-55-58" target="_blank" title="知乎">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  知乎
-                </a>
-              </span>
-            
-          
+        <div class="site-state-item site-state-tags">
+            <span class="site-state-item-count">3</span>
+            <span class="site-state-item-name">标签</span>
         </div>
-
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-block">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              友情链接
-            </div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.wyu.edu.cn/" title="五邑大学" target="_blank">五邑大学</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.scut.edu.cn/" title="华南理工大学" target="_blank">华南理工大学</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.leiphone.com/" title="雷锋网" target="_blank">雷锋网</a>
-                </li>
-              
-            </ul>
-          </div>
-        
-
-      </section>
+        <div class="site-state-item site-state-pages">
+            <span class="site-state-item-count">4</span>
+            <span class="site-state-item-name">页面</span>
+        </div>
+      </div>
 
       
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-两数之和"><span class="nav-number">2.</span> <span class="nav-text">1 两数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-两数相加-链表-（回到目录）"><span class="nav-number">3.</span> <span class="nav-text">2 两数相加(链表)（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-无重复字符的最长子串（回到目录）"><span class="nav-number">4.</span> <span class="nav-text">3 无重复字符的最长子串（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-两个排序数组的中位数"><span class="nav-number">5.</span> <span class="nav-text">4 两个排序数组的中位数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-最长回文子串（回到目录）"><span class="nav-number">6.</span> <span class="nav-text">5 最长回文子串（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-Z字形变换（回到目录）"><span class="nav-number">7.</span> <span class="nav-text">6 Z字形变换（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-反转整数"><span class="nav-number">8.</span> <span class="nav-text">7 反转整数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-字符串转整数-atoi-（回到目录）"><span class="nav-number">9.</span> <span class="nav-text">8 字符串转整数 (atoi)（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-回文数"><span class="nav-number">10.</span> <span class="nav-text">9 回文数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-正则表达式匹配（回到目录）"><span class="nav-number">11.</span> <span class="nav-text">10. 正则表达式匹配（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-盛水（回到目录）"><span class="nav-number">12.</span> <span class="nav-text">11 盛水（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12-整数转换成罗马数字（回到目录）"><span class="nav-number">13.</span> <span class="nav-text">12 整数转换成罗马数字（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13-罗马数字转换城整数（回到目录）"><span class="nav-number">14.</span> <span class="nav-text">13 罗马数字转换城整数（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#15-三数之和（回到目录）"><span class="nav-number">15.</span> <span class="nav-text">15 三数之和（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#16-最接近的三数之和"><span class="nav-number">16.</span> <span class="nav-text">16 最接近的三数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#17-电话号码的字母组合（回到目录）"><span class="nav-number">17.</span> <span class="nav-text">17 电话号码的字母组合（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18-四数之和（回到目录）"><span class="nav-number">18.</span> <span class="nav-text">18 四数之和（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#19-删除倒数第N个节点（回到目录）"><span class="nav-number">19.</span> <span class="nav-text">19 删除倒数第N个节点（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#21-合并两个有序链表"><span class="nav-number">20.</span> <span class="nav-text">21 合并两个有序链表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#20-有效的括号（回到目录）"><span class="nav-number">21.</span> <span class="nav-text">20 有效的括号（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#23-合并K个有序链表"><span class="nav-number">22.</span> <span class="nav-text">23 合并K个有序链表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#24-两两交换链表中相邻的节点（回到目录）"><span class="nav-number">23.</span> <span class="nav-text">24 两两交换链表中相邻的节点（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#26-删除排序数组中的重复项（82，83）（回到目录）"><span class="nav-number">24.</span> <span class="nav-text">26 删除排序数组中的重复项（82，83）（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#80-删除排序数组中的重复项-II（回到目录）"><span class="nav-number">25.</span> <span class="nav-text">80 删除排序数组中的重复项 II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#31-下一个排列（回到目录）"><span class="nav-number">26.</span> <span class="nav-text">31 下一个排列（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#32-最长有效括号"><span class="nav-number">27.</span> <span class="nav-text">32 最长有效括号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#33-搜索旋转排序数组"><span class="nav-number">28.</span> <span class="nav-text">33 搜索旋转排序数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#34-在排序数组中查找元素的第一个和最后一个位置（回到目录）"><span class="nav-number">29.</span> <span class="nav-text">34 在排序数组中查找元素的第一个和最后一个位置（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#35-搜索插入位置"><span class="nav-number">30.</span> <span class="nav-text">35 搜索插入位置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#39-组合总和-I"><span class="nav-number">31.</span> <span class="nav-text">39 组合总和 I</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#40-组合总和-II（回到目录）"><span class="nav-number">32.</span> <span class="nav-text">40 组合总和 II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#45-跳跃游戏-II"><span class="nav-number">33.</span> <span class="nav-text">45 跳跃游戏 II</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#46-全排列"><span class="nav-number">34.</span> <span class="nav-text">46 全排列</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#47-全排列II（回到目录）"><span class="nav-number">35.</span> <span class="nav-text">47 全排列II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#48-旋转图像（回到目录）"><span class="nav-number">36.</span> <span class="nav-text">48 旋转图像（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#49-字母异位词分组"><span class="nav-number">37.</span> <span class="nav-text">49 字母异位词分组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#51-N皇后（回到目录）"><span class="nav-number">38.</span> <span class="nav-text">51 N皇后（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#53-最大子序和"><span class="nav-number">39.</span> <span class="nav-text">53 最大子序和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#55-跳跃游戏（回到目录）"><span class="nav-number">40.</span> <span class="nav-text">55 跳跃游戏（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#61-旋转链表（回到目录）"><span class="nav-number">41.</span> <span class="nav-text">61 旋转链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#64-最小路径和"><span class="nav-number">42.</span> <span class="nav-text">64 最小路径和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#66-加一（回到目录）"><span class="nav-number">43.</span> <span class="nav-text">66 加一（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#67-二进制求和（回到目录）"><span class="nav-number">44.</span> <span class="nav-text">67 二进制求和（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#69-x-的平方根（回到目录）"><span class="nav-number">45.</span> <span class="nav-text">69 x 的平方根（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#70-爬楼梯答（回到目录）"><span class="nav-number">46.</span> <span class="nav-text">70 爬楼梯答（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#76-最小覆盖子串"><span class="nav-number">47.</span> <span class="nav-text">76 最小覆盖子串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#78-子集（回到目录）"><span class="nav-number">48.</span> <span class="nav-text">78 子集（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#82-删除排序链表中的重复元素II（回到目录）"><span class="nav-number">49.</span> <span class="nav-text">82 删除排序链表中的重复元素II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#83-删除排序链表中的重复元素（回到目录）"><span class="nav-number">50.</span> <span class="nav-text">83 删除排序链表中的重复元素（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#86-分割链表（回到目录）"><span class="nav-number">51.</span> <span class="nav-text">86 分割链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#88-合并有序数组"><span class="nav-number">52.</span> <span class="nav-text">88 合并有序数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#92-反转链表II（回到目录）"><span class="nav-number">53.</span> <span class="nav-text">92 反转链表II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#94-二叉树的中序遍历（144，145）（回到目录）"><span class="nav-number">54.</span> <span class="nav-text">94 二叉树的中序遍历（144，145）（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#101-对称二叉树（回到目录）"><span class="nav-number">55.</span> <span class="nav-text">101 对称二叉树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#102-二叉树的层次遍历"><span class="nav-number">56.</span> <span class="nav-text">102 二叉树的层次遍历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#104-二叉树的最大深度（递归）"><span class="nav-number">57.</span> <span class="nav-text">104 二叉树的最大深度（递归）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#111-二叉树的最小深度（回到目录）"><span class="nav-number">58.</span> <span class="nav-text">111 二叉树的最小深度（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#108-将有序数组转换为二叉搜索树（回到目录）"><span class="nav-number">59.</span> <span class="nav-text">108 将有序数组转换为二叉搜索树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#109-有序链表转换二叉搜索树"><span class="nav-number">60.</span> <span class="nav-text">109 有序链表转换二叉搜索树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#110-平衡二叉树（回到目录）"><span class="nav-number">61.</span> <span class="nav-text">110 平衡二叉树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#112-路径之和（二叉树）（回到目录）"><span class="nav-number">62.</span> <span class="nav-text">112 路径之和（二叉树）（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#118-杨辉三角"><span class="nav-number">63.</span> <span class="nav-text">118 杨辉三角</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#119-杨辉三角II（回到目录）"><span class="nav-number">64.</span> <span class="nav-text">119 杨辉三角II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#125-验证回文串（回到目录）"><span class="nav-number">65.</span> <span class="nav-text">125 验证回文串（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#121-买卖股票的最佳时机（回到目录）"><span class="nav-number">66.</span> <span class="nav-text">121 买卖股票的最佳时机（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#134-加油站"><span class="nav-number">67.</span> <span class="nav-text">134 加油站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#135-分发糖果（回到目录）"><span class="nav-number">68.</span> <span class="nav-text">135 分发糖果（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#136-只出现一次的数字"><span class="nav-number">69.</span> <span class="nav-text">136 只出现一次的数字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#137-只出现一次的数字II（回到目录）"><span class="nav-number">70.</span> <span class="nav-text">137 只出现一次的数字II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#141-环形链表（回到目录）"><span class="nav-number">71.</span> <span class="nav-text">141 环形链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#142-环形链表II"><span class="nav-number">72.</span> <span class="nav-text">142 环形链表II</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#144-二叉树的前序遍历"><span class="nav-number">73.</span> <span class="nav-text">144 二叉树的前序遍历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#145-二叉树的后序遍历"><span class="nav-number">74.</span> <span class="nav-text">145 二叉树的后序遍历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#160-求两个链表的交点。-回到目录"><span class="nav-number">75.</span> <span class="nav-text">160 求两个链表的交点。(回到目录)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#169-求众数"><span class="nav-number">76.</span> <span class="nav-text">169 求众数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#189-旋转数组"><span class="nav-number">77.</span> <span class="nav-text">189 旋转数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#191-位1的个数"><span class="nav-number">78.</span> <span class="nav-text">191 位1的个数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#199-二叉树的右视图（回到目录）"><span class="nav-number">79.</span> <span class="nav-text">199 二叉树的右视图（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#206-反转链表（回到目录）"><span class="nav-number">80.</span> <span class="nav-text">206 反转链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#215-数组中的第k个最大元素"><span class="nav-number">81.</span> <span class="nav-text">215 数组中的第k个最大元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#225-用队列实现栈"><span class="nav-number">82.</span> <span class="nav-text">225 用队列实现栈</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#226-翻转二叉树（回到目录）"><span class="nav-number">83.</span> <span class="nav-text">226 翻转二叉树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#258-各位相加（回到目录）"><span class="nav-number">84.</span> <span class="nav-text">258 各位相加（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#295-数据流的中位数（回到目录）"><span class="nav-number">85.</span> <span class="nav-text">295 数据流的中位数（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#315-计算右侧小于当前元素的个数（回到目录）"><span class="nav-number">86.</span> <span class="nav-text">315 计算右侧小于当前元素的个数（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#389-找不同"><span class="nav-number">87.</span> <span class="nav-text">389 找不同</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#402-移掉k个数字（回到目录）"><span class="nav-number">88.</span> <span class="nav-text">402 移掉k个数字（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#414-第三大的数"><span class="nav-number">89.</span> <span class="nav-text">414 第三大的数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#520-检测大写字母（回到目录）"><span class="nav-number">90.</span> <span class="nav-text">520 检测大写字母（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#633-平方数之和"><span class="nav-number">91.</span> <span class="nav-text">633 平方数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#784-字母大小写全排列（回到目录）"><span class="nav-number">92.</span> <span class="nav-text">784 字母大小写全排列（回到目录）</span></a></li></ol></div>
-            
-          </div>
-        </section>
-      
 
-    </div>
-  </aside>
-
-
+      <div class="links-of-author motion-element">
         
       </div>
-    </main>
 
-    <footer id="footer" class="footer">
+      
+      
+
+    </div>
+
+    
+      <div class="post-toc-wrap sidebar-panel-active">
+        <div class="post-toc-indicator-top post-toc-indicator"></div>
+        <div class="post-toc">
+          
+          
+            <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-两数之和"><span class="nav-number">2.</span> <span class="nav-text">1 两数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-两数相加-链表-（回到目录）"><span class="nav-number">3.</span> <span class="nav-text">2 两数相加(链表)（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-无重复字符的最长子串（回到目录）"><span class="nav-number">4.</span> <span class="nav-text">3 无重复字符的最长子串（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-两个排序数组的中位数"><span class="nav-number">5.</span> <span class="nav-text">4 两个排序数组的中位数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-最长回文子串（回到目录）"><span class="nav-number">6.</span> <span class="nav-text">5 最长回文子串（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-Z字形变换（回到目录）"><span class="nav-number">7.</span> <span class="nav-text">6 Z字形变换（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-反转整数"><span class="nav-number">8.</span> <span class="nav-text">7 反转整数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-字符串转整数-atoi-（回到目录）"><span class="nav-number">9.</span> <span class="nav-text">8 字符串转整数 (atoi)（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-回文数"><span class="nav-number">10.</span> <span class="nav-text">9 回文数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-正则表达式匹配（回到目录）"><span class="nav-number">11.</span> <span class="nav-text">10. 正则表达式匹配（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-盛水（回到目录）"><span class="nav-number">12.</span> <span class="nav-text">11 盛水（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12-整数转换成罗马数字（回到目录）"><span class="nav-number">13.</span> <span class="nav-text">12 整数转换成罗马数字（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13-罗马数字转换城整数（回到目录）"><span class="nav-number">14.</span> <span class="nav-text">13 罗马数字转换城整数（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#15-三数之和（回到目录）"><span class="nav-number">15.</span> <span class="nav-text">15 三数之和（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#16-最接近的三数之和"><span class="nav-number">16.</span> <span class="nav-text">16 最接近的三数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#17-电话号码的字母组合（回到目录）"><span class="nav-number">17.</span> <span class="nav-text">17 电话号码的字母组合（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#18-四数之和（回到目录）"><span class="nav-number">18.</span> <span class="nav-text">18 四数之和（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#19-删除倒数第N个节点（回到目录）"><span class="nav-number">19.</span> <span class="nav-text">19 删除倒数第N个节点（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#21-合并两个有序链表"><span class="nav-number">20.</span> <span class="nav-text">21 合并两个有序链表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#20-有效的括号（回到目录）"><span class="nav-number">21.</span> <span class="nav-text">20 有效的括号（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#23-合并K个有序链表"><span class="nav-number">22.</span> <span class="nav-text">23 合并K个有序链表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#24-两两交换链表中相邻的节点（回到目录）"><span class="nav-number">23.</span> <span class="nav-text">24 两两交换链表中相邻的节点（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#26-删除排序数组中的重复项（82，83）（回到目录）"><span class="nav-number">24.</span> <span class="nav-text">26 删除排序数组中的重复项（82，83）（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#80-删除排序数组中的重复项-II（回到目录）"><span class="nav-number">25.</span> <span class="nav-text">80 删除排序数组中的重复项 II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#31-下一个排列（回到目录）"><span class="nav-number">26.</span> <span class="nav-text">31 下一个排列（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#32-最长有效括号"><span class="nav-number">27.</span> <span class="nav-text">32 最长有效括号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#33-搜索旋转排序数组"><span class="nav-number">28.</span> <span class="nav-text">33 搜索旋转排序数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#34-在排序数组中查找元素的第一个和最后一个位置（回到目录）"><span class="nav-number">29.</span> <span class="nav-text">34 在排序数组中查找元素的第一个和最后一个位置（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#35-搜索插入位置"><span class="nav-number">30.</span> <span class="nav-text">35 搜索插入位置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#39-组合总和-I"><span class="nav-number">31.</span> <span class="nav-text">39 组合总和 I</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#40-组合总和-II（回到目录）"><span class="nav-number">32.</span> <span class="nav-text">40 组合总和 II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#45-跳跃游戏-II"><span class="nav-number">33.</span> <span class="nav-text">45 跳跃游戏 II</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#46-全排列"><span class="nav-number">34.</span> <span class="nav-text">46 全排列</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#47-全排列II（回到目录）"><span class="nav-number">35.</span> <span class="nav-text">47 全排列II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#48-旋转图像（回到目录）"><span class="nav-number">36.</span> <span class="nav-text">48 旋转图像（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#49-字母异位词分组"><span class="nav-number">37.</span> <span class="nav-text">49 字母异位词分组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#51-N皇后（回到目录）"><span class="nav-number">38.</span> <span class="nav-text">51 N皇后（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#53-最大子序和"><span class="nav-number">39.</span> <span class="nav-text">53 最大子序和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#55-跳跃游戏（回到目录）"><span class="nav-number">40.</span> <span class="nav-text">55 跳跃游戏（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#61-旋转链表（回到目录）"><span class="nav-number">41.</span> <span class="nav-text">61 旋转链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#64-最小路径和"><span class="nav-number">42.</span> <span class="nav-text">64 最小路径和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#66-加一（回到目录）"><span class="nav-number">43.</span> <span class="nav-text">66 加一（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#67-二进制求和（回到目录）"><span class="nav-number">44.</span> <span class="nav-text">67 二进制求和（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#69-x-的平方根（回到目录）"><span class="nav-number">45.</span> <span class="nav-text">69 x 的平方根（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#70-爬楼梯答（回到目录）"><span class="nav-number">46.</span> <span class="nav-text">70 爬楼梯答（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#76-最小覆盖子串"><span class="nav-number">47.</span> <span class="nav-text">76 最小覆盖子串</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#78-子集（回到目录）"><span class="nav-number">48.</span> <span class="nav-text">78 子集（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#82-删除排序链表中的重复元素II（回到目录）"><span class="nav-number">49.</span> <span class="nav-text">82 删除排序链表中的重复元素II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#83-删除排序链表中的重复元素（回到目录）"><span class="nav-number">50.</span> <span class="nav-text">83 删除排序链表中的重复元素（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#86-分割链表（回到目录）"><span class="nav-number">51.</span> <span class="nav-text">86 分割链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#88-合并有序数组"><span class="nav-number">52.</span> <span class="nav-text">88 合并有序数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#92-反转链表II（回到目录）"><span class="nav-number">53.</span> <span class="nav-text">92 反转链表II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#94-二叉树的中序遍历（144，145）（回到目录）"><span class="nav-number">54.</span> <span class="nav-text">94 二叉树的中序遍历（144，145）（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#101-对称二叉树（回到目录）"><span class="nav-number">55.</span> <span class="nav-text">101 对称二叉树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#102-二叉树的层次遍历"><span class="nav-number">56.</span> <span class="nav-text">102 二叉树的层次遍历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#104-二叉树的最大深度（递归）"><span class="nav-number">57.</span> <span class="nav-text">104 二叉树的最大深度（递归）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#111-二叉树的最小深度（回到目录）"><span class="nav-number">58.</span> <span class="nav-text">111 二叉树的最小深度（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#108-将有序数组转换为二叉搜索树（回到目录）"><span class="nav-number">59.</span> <span class="nav-text">108 将有序数组转换为二叉搜索树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#109-有序链表转换二叉搜索树"><span class="nav-number">60.</span> <span class="nav-text">109 有序链表转换二叉搜索树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#110-平衡二叉树（回到目录）"><span class="nav-number">61.</span> <span class="nav-text">110 平衡二叉树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#112-路径之和（二叉树）（回到目录）"><span class="nav-number">62.</span> <span class="nav-text">112 路径之和（二叉树）（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#118-杨辉三角"><span class="nav-number">63.</span> <span class="nav-text">118 杨辉三角</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#119-杨辉三角II（回到目录）"><span class="nav-number">64.</span> <span class="nav-text">119 杨辉三角II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#125-验证回文串（回到目录）"><span class="nav-number">65.</span> <span class="nav-text">125 验证回文串（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#121-买卖股票的最佳时机（回到目录）"><span class="nav-number">66.</span> <span class="nav-text">121 买卖股票的最佳时机（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#134-加油站"><span class="nav-number">67.</span> <span class="nav-text">134 加油站</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#135-分发糖果（回到目录）"><span class="nav-number">68.</span> <span class="nav-text">135 分发糖果（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#136-只出现一次的数字"><span class="nav-number">69.</span> <span class="nav-text">136 只出现一次的数字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#137-只出现一次的数字II（回到目录）"><span class="nav-number">70.</span> <span class="nav-text">137 只出现一次的数字II（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#141-环形链表（回到目录）"><span class="nav-number">71.</span> <span class="nav-text">141 环形链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#142-环形链表II"><span class="nav-number">72.</span> <span class="nav-text">142 环形链表II</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#144-二叉树的前序遍历"><span class="nav-number">73.</span> <span class="nav-text">144 二叉树的前序遍历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#145-二叉树的后序遍历"><span class="nav-number">74.</span> <span class="nav-text">145 二叉树的后序遍历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#160-求两个链表的交点。-回到目录"><span class="nav-number">75.</span> <span class="nav-text">160 求两个链表的交点。(回到目录)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#169-求众数"><span class="nav-number">76.</span> <span class="nav-text">169 求众数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#189-旋转数组"><span class="nav-number">77.</span> <span class="nav-text">189 旋转数组</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#191-位1的个数"><span class="nav-number">78.</span> <span class="nav-text">191 位1的个数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#199-二叉树的右视图（回到目录）"><span class="nav-number">79.</span> <span class="nav-text">199 二叉树的右视图（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#206-反转链表（回到目录）"><span class="nav-number">80.</span> <span class="nav-text">206 反转链表（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#215-数组中的第k个最大元素"><span class="nav-number">81.</span> <span class="nav-text">215 数组中的第k个最大元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#225-用队列实现栈"><span class="nav-number">82.</span> <span class="nav-text">225 用队列实现栈</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#226-翻转二叉树（回到目录）"><span class="nav-number">83.</span> <span class="nav-text">226 翻转二叉树（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#258-各位相加（回到目录）"><span class="nav-number">84.</span> <span class="nav-text">258 各位相加（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#295-数据流的中位数（回到目录）"><span class="nav-number">85.</span> <span class="nav-text">295 数据流的中位数（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#315-计算右侧小于当前元素的个数（回到目录）"><span class="nav-number">86.</span> <span class="nav-text">315 计算右侧小于当前元素的个数（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#389-找不同"><span class="nav-number">87.</span> <span class="nav-text">389 找不同</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#402-移掉k个数字（回到目录）"><span class="nav-number">88.</span> <span class="nav-text">402 移掉k个数字（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#414-第三大的数"><span class="nav-number">89.</span> <span class="nav-text">414 第三大的数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#520-检测大写字母（回到目录）"><span class="nav-number">90.</span> <span class="nav-text">520 检测大写字母（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#633-平方数之和"><span class="nav-number">91.</span> <span class="nav-text">633 平方数之和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#784-字母大小写全排列（回到目录）"><span class="nav-number">92.</span> <span class="nav-text">784 字母大小写全排列（回到目录）</span></a></li></ol></div>
+          
+        </div>
+        <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+      </div>
+    
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <div id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <div class="copyright">
   
-  &copy;  2016 - 
-  <span itemprop="copyrightYear">2018</span>
+  &copy; &nbsp; 
+  2018
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="icon-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">winper</span>
+  <span class="author">winper</span>
 </div>
 
 <div class="powered-by">
@@ -996,80 +679,514 @@
   </a>
 </div>
 
-        
 
-        
+
       </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
     </div>
+
+    <div class="back-to-top"></div>
   </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  </script>
+
+  <script type="text/javascript">
+  function hasMobileUA () {
+    var nav = window.navigator;
+    var ua = nav.userAgent;
+    var pa = /iPad|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g;
+
+    return pa.test(ua);
+  }
+
+  function isDesktop () {
+    return screen.width > 991 && !hasMobileUA();
+  }
+
+  function isTablet () {
+    return screen.width < 992 && screen.width > 767 && hasMobileUA();
+  }
+
+  function isMobile () {
+    return screen.width < 767 && hasMobileUA();
+  }
+
+  function escapeSelector (selector) {
+    return selector.replace(/[!"$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g, "\\$&")
+  }
+</script>
 
   
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" id="motion.global">
+  $(document).ready(function () {
+    var body = $('body');
+    var isSidebarVisible = false;
+    var sidebarToggle = $('.sidebar-toggle');
+    var sidebarToggleLine1st = $('.sidebar-toggle-line-first')
+    var sidebarToggleLine2nd = $('.sidebar-toggle-line-middle');
+    var sidebarToggleLine3rd = $('.sidebar-toggle-line-last');
+    var sidebar = $('.sidebar');
+
+    var SIDEBAR_WIDTH = '320px';
+    var SIDEBAR_DISPLAY_DURATION = 300;
+
+    var sidebarToogleLineStatusInit = {width: '100%', opacity: 1, left: 0, rotateZ: 0, top: 0};
+
+    var sidebarToggleLine1stStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine1stStatusArrow = {width: '50%', rotateZ: '-45deg', top: '2px'};
+    var sidebarToogleLine1stStatusClose = {width: '100%', rotateZ: '-45deg', top: '5px'};
+
+    var sidebarToggleLine2ndStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine2ndStatusArrow = {width: '90%'};
+    var sidebarToogleLine2ndStatusClose = {opacity: 0};
+
+    var sidebarToggleLine3rdStatusInit = sidebarToogleLineStatusInit;
+    var sidebarToggleLine3rdStatusArrow = {width: '50%', rotateZ: '45deg', top: '-2px'};
+    var sidebarToogleLine3rdStatusClose = {width: '100%', rotateZ: '45deg', top: '-5px'};
+
+    LogoAndMenuMotion();
+    sidebatToggleMotion();
+    postsListMotion();
+    backToTopMotion();
+
+
+    $(document)
+      .on('sidebar.isShowing', function () {
+        isDesktop() && body.velocity(
+          {paddingRight: SIDEBAR_WIDTH},
+          SIDEBAR_DISPLAY_DURATION
+        );
+        sidebarContentMotion();
+      })
+      .on('sidebar.isHiding', function () {});
+
+    function LogoAndMenuMotion() {
+      $.Velocity.RunSequence([
+        { e: $('.brand'), p: { opacity: 1 }, o: { duration: 100 } },
+        { e: $('.logo'), p: { opacity: 1, top: 0 }, o: { duration: 50} },
+        
+        { e: $('.logo-line-before i'), p: { translateX: "100%" }, o: { duration: 500, sequenceQueue: false } },
+        { e: $('.logo-line-after i'), p: { translateX: "-100%" }, o: { duration: 500, sequenceQueue: false } },
+        
+        { e: $('.site-title'), p: { opacity: 1, top: 0 }, o: { duration: 200 } }
+      ]);
+      $('.menu-item').velocity('transition.slideDownIn', {display: null});
+    }
+
+
+    function backToTopMotion () {
+      var b2top = $('.back-to-top');
+      b2top.on('click', function () {
+        body.velocity('scroll');
+      });
+    }
+
+    function sidebarShowMotion () {
+
+      sidebarToggleLine1st.velocity(sidebarToogleLine1stStatusClose);
+      sidebarToggleLine2nd.velocity(sidebarToogleLine2ndStatusClose);
+      sidebarToggleLine3rd.velocity(sidebarToogleLine3rdStatusClose);
+
+      sidebar.velocity({width: SIDEBAR_WIDTH}, {
+        display: 'block',
+        duration: SIDEBAR_DISPLAY_DURATION,
+        complete: function () {
+          sidebar.addClass('sidebar-active');
+          sidebar.trigger('sidebar.didShow');
+        }
+      });
+      sidebar.trigger('sidebar.isShowing');
+    }
+
+    function sidebarHideMotion () {
+      isDesktop() && body.velocity({paddingRight: 0});
+      sidebar.velocity('reverse');
+
+      sidebarToggleLine1st.velocity(sidebarToggleLine1stStatusInit);
+      sidebarToggleLine2nd.velocity(sidebarToggleLine2ndStatusInit);
+      sidebarToggleLine3rd.velocity(sidebarToggleLine3rdStatusInit);
+
+      sidebar.removeClass('sidebar-active');
+      sidebar.trigger('sidebar.isHiding');
+    };
+
+    function sidebarContentMotion () {
+      $('.sidebar .motion-element').velocity(
+        'transition.slideRightIn',
+        {stagger: 50, drag: true}
+      );
+    }
+
+    function postsListMotion () {
+      var postMotionOptions = window.postMotionOptions || {stagger: 300, drag: true};
+      $('.post').velocity('transition.slideDownIn', postMotionOptions);
+    }
+
+    function sidebatToggleMotion () {
+      sidebarToggle.on('click', function () {
+        isSidebarVisible ? sidebarHideMotion() : sidebarShowMotion();
+        isSidebarVisible = !isSidebarVisible;
+      });
+
+      sidebarToggle.hover(function () {
+        if (isSidebarVisible) {return}
+        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusArrow);
+        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusArrow);
+        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusArrow);
+      }, function () {
+        if (isSidebarVisible) {return}
+        sidebarToggleLine1st.velocity('stop').velocity(sidebarToggleLine1stStatusInit);
+        sidebarToggleLine2nd.velocity('stop').velocity(sidebarToggleLine2ndStatusInit);
+        sidebarToggleLine3rd.velocity('stop').velocity(sidebarToggleLine3rdStatusInit);
+      });
+    }
+  });
+
 </script>
 
 
 
 
 
+  
+  
+<script type="text/javascript" id="bootstrap.scrollspy.custom">
+  /* ========================================================================
+  * Bootstrap: scrollspy.js v3.3.2
+  * http://getbootstrap.com/javascript/#scrollspy
+  * ========================================================================
+  * Copyright 2011-2015 Twitter, Inc.
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  * ======================================================================== */
+
+  /**
+   * Custom by iissnan
+   *
+   * - Add a `clear.bs.scrollspy` event.
+   * - Esacpe targets selector.
+   */
+
+
+  +function ($) {
+    'use strict';
+
+    // SCROLLSPY CLASS DEFINITION
+    // ==========================
+
+    function ScrollSpy(element, options) {
+      this.$body          = $(document.body)
+      this.$scrollElement = $(element).is(document.body) ? $(window) : $(element)
+      this.options        = $.extend({}, ScrollSpy.DEFAULTS, options)
+      this.selector       = (this.options.target || '') + ' .nav li > a'
+      this.offsets        = []
+      this.targets        = []
+      this.activeTarget   = null
+      this.scrollHeight   = 0
+
+      this.$scrollElement.on('scroll.bs.scrollspy', $.proxy(this.process, this))
+      this.refresh()
+      this.process()
+    }
+
+    ScrollSpy.VERSION  = '3.3.2'
+
+    ScrollSpy.DEFAULTS = {
+      offset: 10
+    }
+
+    ScrollSpy.prototype.getScrollHeight = function () {
+      return this.$scrollElement[0].scrollHeight || Math.max(this.$body[0].scrollHeight, document.documentElement.scrollHeight)
+    }
+
+    ScrollSpy.prototype.refresh = function () {
+      var that          = this
+      var offsetMethod  = 'offset'
+      var offsetBase    = 0
+
+      this.offsets      = []
+      this.targets      = []
+      this.scrollHeight = this.getScrollHeight()
+
+      if (!$.isWindow(this.$scrollElement[0])) {
+        offsetMethod = 'position'
+        offsetBase   = this.$scrollElement.scrollTop()
+      }
+
+      this.$body
+        .find(this.selector)
+        .map(function () {
+          var $el   = $(this)
+          var href  = $el.data('target') || $el.attr('href')
+          var $href = /^#./.test(href) && $(escapeSelector(href)) // Need to escape selector.
+
+          return ($href
+            && $href.length
+            && $href.is(':visible')
+            && [[$href[offsetMethod]().top + offsetBase, href]]) || null
+        })
+        .sort(function (a, b) { return a[0] - b[0] })
+        .each(function () {
+          that.offsets.push(this[0])
+          that.targets.push(this[1])
+        })
+
+
+    }
+
+    ScrollSpy.prototype.process = function () {
+      var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
+      var scrollHeight = this.getScrollHeight()
+      var maxScroll    = this.options.offset + scrollHeight - this.$scrollElement.height()
+      var offsets      = this.offsets
+      var targets      = this.targets
+      var activeTarget = this.activeTarget
+      var i
+
+      if (this.scrollHeight != scrollHeight) {
+        this.refresh()
+      }
+
+      if (scrollTop >= maxScroll) {
+        return activeTarget != (i = targets[targets.length - 1]) && this.activate(i)
+      }
+
+      if (activeTarget && scrollTop < offsets[0]) {
+        $(this.selector).trigger('clear.bs.scrollspy')  // Add a custom event.
+        this.activeTarget = null
+        return this.clear()
+      }
+
+      for (i = offsets.length; i--;) {
+        activeTarget != targets[i]
+          && scrollTop >= offsets[i]
+          && (!offsets[i + 1] || scrollTop <= offsets[i + 1])
+          && this.activate(targets[i])
+      }
+    }
+
+    ScrollSpy.prototype.activate = function (target) {
+      this.activeTarget = target
+
+      this.clear()
+
+      var selector = this.selector +
+        '[data-target="' + target + '"],' +
+        this.selector + '[href="' + target + '"]'
+
+      var active = $(selector)
+        .parents('li')
+        .addClass('active')
+
+      if (active.parent('.dropdown-menu').length) {
+        active = active
+          .closest('li.dropdown')
+          .addClass('active')
+      }
+
+      active.trigger('activate.bs.scrollspy')
+    }
+
+    ScrollSpy.prototype.clear = function () {
+      $(this.selector)
+        .parentsUntil(this.options.target, '.active')
+        .removeClass('active')
+    }
+
+
+    // SCROLLSPY PLUGIN DEFINITION
+    // ===========================
+
+    function Plugin(option) {
+      return this.each(function () {
+        var $this   = $(this)
+        var data    = $this.data('bs.scrollspy')
+        var options = typeof option == 'object' && option
+
+        if (!data) $this.data('bs.scrollspy', (data = new ScrollSpy(this, options)))
+        if (typeof option == 'string') data[option]()
+      })
+    }
+
+    var old = $.fn.scrollspy
+
+    $.fn.scrollspy             = Plugin
+    $.fn.scrollspy.Constructor = ScrollSpy
+
+
+    // SCROLLSPY NO CONFLICT
+    // =====================
+
+    $.fn.scrollspy.noConflict = function () {
+      $.fn.scrollspy = old
+      return this
+    }
+
+
+    // SCROLLSPY DATA-API
+    // ==================
+
+    $(window).on('load.bs.scrollspy.data-api', function () {
+      $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this)
+        Plugin.call($spy, $spy.data())
+      })
+    })
+
+  }(jQuery);
+</script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0 && isDesktop()) {
+        setTimeout(function () {
+          $('.sidebar-toggle').trigger('click');
+        }, 800);
+      }
+    });
+  </script>
 
 
 
 
   
-
-
-
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
-
-
 
   
 
@@ -1082,7 +1199,6 @@
     (function() {
       var ds = document.createElement('script');
       ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
       ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
       ds.charset = 'UTF-8';
       (document.getElementsByTagName('head')[0]
@@ -1091,252 +1207,6 @@
   </script>
 
   
-    
-      
-      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js"></script>
-    
   
-
-
-
-
-
-  
-  
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
-
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';                
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
-                            
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
-
-    // handle and trigger popup window;
-    $('.popup-trigger').mousedown(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-
-    });
-
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
-
-  
-
-  
-
-  
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("Pnx7Y1Qtr0mOhO0H7ecaSOCS-gzGzoHsz", "dsR5Kv9elqVq5LvWFgv7W08S");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
-
 </body>
 </html>
