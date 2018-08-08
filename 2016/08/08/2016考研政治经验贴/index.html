@@ -5,16 +5,24 @@
   
 
 
-
-<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-
-
 <html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<script>
+    (function(){
+        if('password'){
+            if (prompt('请输入文章密码') !== 'password'){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -94,7 +102,7 @@
 <meta property="og:url" content="https://winper001.github.io/2016/08/08/2016考研政治经验贴/index.html">
 <meta property="og:site_name" content="winper001">
 <meta property="og:description" content="2016考研政治随谈本人winper，考的是华南理工大学电信学院的电子与通信工程。考研政治的分数是81，这个分数听起来是挺高的，但是要考取这个分数并不是很难。原因有二：一是今年的政治相对简单，二是存在泄题的现象。对于我本人来说，政治是我四科之中最有信心的学科，这也得益于我平时的政治素养吧。例如大学这几年的有关于政治的课程（思修，近现代史，毛概）上课的时候就很认真，以及平时也很喜欢看一些历史书籍，经">
-<meta property="og:updated_time" content="2016-08-08T12:59:24.217Z">
+<meta property="og:updated_time" content="2018-08-08T03:45:51.600Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2016考研政治经验贴">
 <meta name="twitter:description" content="2016考研政治随谈本人winper，考的是华南理工大学电信学院的电子与通信工程。考研政治的分数是81，这个分数听起来是挺高的，但是要考取这个分数并不是很难。原因有二：一是今年的政治相对简单，二是存在泄题的现象。对于我本人来说，政治是我四科之中最有信心的学科，这也得益于我平时的政治素养吧。例如大学这几年的有关于政治的课程（思修，近现代史，毛概）上课的时候就很认真，以及平时也很喜欢看一些历史书籍，经">
@@ -365,6 +373,16 @@
 
       
     </div>
+	
+	<div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
 
     <div>
       
@@ -388,7 +406,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/考研/" rel="tag">#考研</a>
+            <a href="/tags/考研/" rel="tag"><i class="fa fa-tag"></i>考研</a>
           
         </div>
       
@@ -562,15 +580,15 @@
             <ul class="links-of-blogroll-list">
               
                 <li class="links-of-blogroll-item">
+                  <a href="https://leetcode-cn.com/" title="Leetcode" target="_blank">Leetcode</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
                   <a href="http://www.wyu.edu.cn/" title="五邑大学" target="_blank">五邑大学</a>
                 </li>
               
                 <li class="links-of-blogroll-item">
                   <a href="http://www.scut.edu.cn/" title="华南理工大学" target="_blank">华南理工大学</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.leiphone.com/" title="雷锋网" target="_blank">雷锋网</a>
                 </li>
               
             </ul>
@@ -602,7 +620,8 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        
+<div class="copyright" >
   
   &copy;  2016 - 
   <span itemprop="copyrightYear">2018</span>
@@ -612,7 +631,28 @@
   <span class="author" itemprop="copyrightHolder">winper</span>
 </div>
 
-<div class="powered-by">
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">总访客<span id="busuanzi_value_site_uv"></span>人</span>
+    <span class="post-meta-divider">|</span>
+
+
+
+<!-- div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+-->
+
+
+
+
+
+<!-- <div class="powered-by">
   由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
@@ -622,6 +662,7 @@
     NexT.Mist
   </a>
 </div>
+-->
 
         
 
@@ -964,6 +1005,10 @@
 
 
   
-
+  
+  
+  <script type="text/javascript"
+  color="0,0,0" opacity='0.5' zIndex="-2" count="50" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
 </body>
 </html>
