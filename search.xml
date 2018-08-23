@@ -4,6 +4,24 @@
   
     
     <entry>
+      <title><![CDATA[1*1卷积]]></title>
+      <url>https://winper001.github.io/2018/08/24/1x1%E5%8D%B7%E7%A7%AF%E7%9A%84%E4%BD%9C%E7%94%A8/</url>
+      <content type="html"><![CDATA[<h4 id="主要有两点作用："><a href="#主要有两点作用：" class="headerlink" title="主要有两点作用："></a>主要有两点作用：</h4><ul>
+<li>1x1 卷积可以压缩信道数。池化可以压缩宽和高。  </li>
+<li>1x1卷积给神经网络增加非线性，从而减少或保持信道数不变，也可以增加信道数。  </li>
+</ul>
+<p><strong>如下图可以形象表示</strong>：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1496926-8a2f31f55ed4ebaa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="what"></p>
+<h3 id="实现跨通道的交互和信息整合"><a href="#实现跨通道的交互和信息整合" class="headerlink" title="实现跨通道的交互和信息整合"></a>实现跨通道的交互和信息整合</h3><p><code>1×1</code>的卷积层（可能）引起人们的重视是在NIN的结构中，论文中林敏师兄的想法是利用MLP代替传统的线性卷积核，从而提高网络的表达能力。文中同时利用了跨通道pooling的角度解释，认为文中提出的MLP其实等价于在传统卷积核后面接cccp层，从而实现多个feature map的线性组合，实现跨通道的信息整合。而cccp层是等价于1×1卷积的，因此细看NIN的caffe实现，就是在每个传统卷积层后面接了两个cccp层（其实就是接了两个1×1的卷积层）</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1496926-0c124b0efc8f16d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300" alt=""></p>
+<h3 id="进行卷积核通道数的降维和升维"><a href="#进行卷积核通道数的降维和升维" class="headerlink" title="进行卷积核通道数的降维和升维"></a>进行卷积核通道数的降维和升维</h3><p>由于<code>3X3</code>卷积或者<code>5X5</code>卷积在几百个filter的卷积层上做卷积操作时相当耗时，所以1X1卷积在3X3卷积或者5X5卷积计算之前先降低维度。那么，1X1卷积的主要作用有以下几点：  </p>
+<p>1、降维<code>（dimension reductionality）</code>。比如，一张<code>500 X 500</code>且厚度depth为100 的图片在20个filter上做1X1的卷积，那么结果的大小为<code>500X500X20</code>。  </p>
+<p>2、加入非线性。卷积层之后经过激励层，1X1的卷积在前一层的学习表示上添加了非线性激励<code>（ non-linear activation ）</code>，提升网络的表达能力。</p>
+<p>如果卷积的输出输入都是一个平面，那么１X1卷积核并没有什么意义，它是完全不考虑像素与周边其他像素关系。但卷积的输出输入是长方体，所以１X1卷积实际上对每个像素点，在不同的channels上进行线性组合（信息整合），且保留原有平面结构，调控depth,从而完成升维或降维的功能。<br>下图所示，如果选择２个filters的１X1卷积层，那么数据就从原来的depth3降到了２。若用４个filters,则起到了升维的作用。<br><img src="https://upload-images.jianshu.io/upload_images/1496926-e4edc99affc4e90f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600" alt=""></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[leetcode 动态规划]]></title>
       <url>https://winper001.github.io/2018/08/24/leetcode%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
       <content type="html"><![CDATA[<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>[toc]</p>
