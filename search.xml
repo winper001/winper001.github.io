@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title><![CDATA[inception v1-v4]]></title>
+      <url>https://winper001.github.io/2018/08/25/inception%20v1%20v2%20v3%20v4/</url>
+      <content type="html"><![CDATA[<h1 id="inception-v1-v4"><a href="#inception-v1-v4" class="headerlink" title="inception v1-v4"></a>inception v1-v4</h1><h2 id="v1模型"><a href="#v1模型" class="headerlink" title="v1模型"></a>v1模型</h2><p>inception v1的模型是将1X1,3X3,5X5的卷积层和3X3的pooling层堆在一起。主要考虑到两个方面，一是增加了网络的宽度，另一方面是增加了网络对尺度的适应性。</p>
+<p><img src="https://img-blog.csdn.net/20160225155336279" alt=""></p>
+<p><img src="https://img-blog.csdn.net/20160225155351172" alt=""></p>
+<p>第一张图是论文中提出的最原始的版本，所有的卷积核都在上一层的所有输出上来做，那5×5的卷积核所需的计算量就太大了，造成了特征图厚度很大。为了避免这一现象提出的inception具有如下结构，在3x3前，5x5前，max pooling后分别加上了1x1的卷积核起到了降低特征图厚度的作用，也就是Inception v1的网络结构。 </p>
+<h2 id="v2模型"><a href="#v2模型" class="headerlink" title="v2模型"></a>v2模型</h2><p>一方面了加入了BN层，减少了Internal Covariate Shift（内部neuron的数据分布发生变化），使每一层的输出都规范化到一个N(0, 1)的高斯;另外一方面学习VGG用2个3x3的conv替代inception模块中的5x5，既降低了参数数量，也加速计算。</p>
+<h2 id="v3模型"><a href="#v3模型" class="headerlink" title="v3模型"></a>v3模型</h2><p>v3一个最重要的改进是分解（Factorization），将7x7分解成两个一维的卷积（1x7,7x1），3x3也是一样（1x3,3x1），这样的好处，既可以加速计算（多余的计算能力可以用来加深网络），又可以将1个conv拆成2个conv，使得网络深度进一步增加，增加了网络的非线性，还有值得注意的地方是网络输入从224x224变为了299x299，更加精细设计了35x35/17x17/8x8的模块。</p>
+<h1 id="v4模型"><a href="#v4模型" class="headerlink" title="v4模型"></a>v4模型</h1><p>inception模块结合residual connection,resnet的结构可以加速训练。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[两种人]]></title>
       <url>https://winper001.github.io/2018/08/24/%E4%B8%A4%E7%A7%8D%E4%BA%BA/</url>
       <content type="html"><![CDATA[<p>通过观察和经验，我发现那些稍微准备就去干的人和非要准备充分才去行动的人最大的区别就在于对人生的认知不同。前者认为人生是各种体验的集合，后者认为人生是各种成功的档案。因此前者往往充满活力和冒险精神，充满勇气和自信。注重过程，乐于接受变化和挑战，不惧怕失败，情绪乐观，面对失败也较轻松和正面，觉得至少能收获一份经验。这样的人常常大胆尝试，敢于打破规则，愿意去做许多未知的事情；后者则畏首畏尾，缺乏勇气和自信，全然以目标为导向。害怕变化和挑战，也非常害怕失败，只要一失败简直会要了他的命，压力沉重，甚至陷入无法自拔的沮丧和毁灭之中，这样的人因为很多的不敢为，所以经历的事情也比较少，囿于自身思维中的各种限制，躲在自己认为的安全区中。</p>
