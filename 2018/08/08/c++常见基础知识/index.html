@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion">
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -123,7 +123,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
+    scheme: 'Pisces',
     sidebar: {"position":"right","display":"hide"},
     fancybox: true,
     motion: true,
@@ -379,14 +379,14 @@
 <hr>
 <h1 id="typedef使用"><a href="#typedef使用" class="headerlink" title="typedef使用"></a>typedef使用</h1><h2 id="基本解释"><a href="#基本解释" class="headerlink" title="基本解释"></a>基本解释</h2><p>　　typedef为C语言的关键字，作用是为一种数据类型定义一个新名字。这里的数据类型包括内部数据类型（int,char等）和自定义的数据类型（struct等）。</p>
 <p>　　在编程中使用typedef目的一般有两个，一个是给变量一个易记且意义明确的新名字，另一个是简化一些比较复杂的类型声明。</p>
-<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>（1）用typedef声明一个新类型名来代替已有的类型名。如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">typedef int Status  //指定标识符Status代表int类型</div><div class="line">typedef double DATE  //指定标识符DATE代表double类型</div></pre></td></tr></table></figure></p>
-<p>这样下面代码等价：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">int i; double j;</div><div class="line">Status i;DATE j;</div></pre></td></tr></table></figure></p>
-<p>（2）用typedef对数组类型起新名：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">typedef int NUM[100];//声明NUM为整数数组类型，可以包含100个元素</div><div class="line">NUM n;//定义n为包含100个整数元素的数组，n就是数组名</div></pre></td></tr></table></figure></p>
-<p>（3）对一个结构体类型声明一个新名字：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">typedef struct  //在struct之前用了关键字typedef，表示是声明新类型名</div><div class="line">&#123;</div><div class="line">    int month;</div><div class="line">    int day;</div><div class="line">    int year;  </div><div class="line">&#125; TIME; //TIME是新类型名，但不是新类型，也不是结构体变量名</div></pre></td></tr></table></figure></p>
-<p> 新声明的新类型名TIME代表上面指定的一个结构体类型，这样就可以用TIME定义该结构体变量，如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">TIME birthday;</div><div class="line">TIME *P //p是指向该结构体类型数据的指针</div></pre></td></tr></table></figure></p>
+<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><p>（1）用typedef声明一个新类型名来代替已有的类型名。如：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> Status  <span class="comment">//指定标识符Status代表int类型</span></div><div class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> DATE  <span class="comment">//指定标识符DATE代表double类型</span></div></pre></td></tr></table></figure></p>
+<p>这样下面代码等价：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">int <span class="built_in">i</span>; double <span class="built_in">j</span>;</div><div class="line">Status <span class="built_in">i</span>;DATE <span class="built_in">j</span>;</div></pre></td></tr></table></figure></p>
+<p>（2）用typedef对数组类型起新名：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typedef</span> <span class="keyword">int</span> NUM[<span class="number">100</span>];<span class="comment">//声明NUM为整数数组类型，可以包含100个元素</span></div><div class="line">NUM n;<span class="comment">//定义n为包含100个整数元素的数组，n就是数组名</span></div></pre></td></tr></table></figure></p>
+<p>（3）对一个结构体类型声明一个新名字：<br><figure class="highlight excel"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">typedef struct  //在struct之前用了关键字typedef，表示是声明新类型名</div><div class="line">&#123;</div><div class="line">    <span class="built_in">int</span> <span class="built_in">month</span>;</div><div class="line">    <span class="built_in">int</span> <span class="built_in">day</span>;</div><div class="line">    <span class="built_in">int</span> <span class="built_in">year</span>;  </div><div class="line">&#125; <span class="built_in">TIME</span>; //<span class="built_in">TIME</span>是新类型名，但不是新类型，也不是结构体变量名</div></pre></td></tr></table></figure></p>
+<p> 新声明的新类型名TIME代表上面指定的一个结构体类型，这样就可以用TIME定义该结构体变量，如：<br><figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">TIME</span> birthday;</div><div class="line"><span class="built_in">TIME</span> *P <span class="comment">//p是指向该结构体类型数据的指针</span></div></pre></td></tr></table></figure></p>
 <h2 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h2><p>（1）用typedef只是对已经存在的类型增加一个类型名，而没有创造一个新的类型。只是增加了一个新名字，可以用该名字定义变量，比如使用上文中的Status定义变量i；则i变量的类型为int型。</p>
 <p>（2）可以用typedef声明新类型名。但是不能用来定义变量</p>
-<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><p>　　使用typedef类型名，有利于程序的移植性。有时程序会依赖硬件特性。比如在某个Cpp系统用2个字节存一个int类型变量，用4个字节存一个long类型变量。而在另一个Cpp系统中以4个字节存放int类型变量。则把一个Cpp程序从一个用2个字节存一个int类型变量的C++系统移植到以4个字节存放int类型变量的Cpp系统时，如果原来用typedef声明int类型,则例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Typedef  int INTEGER ; //原来这样写</div><div class="line">Typedef long INTEGER ; //移植后可以改为这样</div></pre></td></tr></table></figure></p>
+<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><p>　　使用typedef类型名，有利于程序的移植性。有时程序会依赖硬件特性。比如在某个Cpp系统用2个字节存一个int类型变量，用4个字节存一个long类型变量。而在另一个Cpp系统中以4个字节存放int类型变量。则把一个Cpp程序从一个用2个字节存一个int类型变量的C++系统移植到以4个字节存放int类型变量的Cpp系统时，如果原来用typedef声明int类型,则例如：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Typedef  <span class="keyword">int</span> INTEGER ; <span class="comment">//原来这样写</span></div><div class="line">Typedef <span class="keyword">long</span> INTEGER ; <span class="comment">//移植后可以改为这样</span></div></pre></td></tr></table></figure></p>
 <p>如果不是用typedef声明的，那每一处定义int类型的地方都要改，程序越大，工作量越大。</p>
 <hr>
 <h1 id="c-中常见数据结构的基本操作"><a href="#c-中常见数据结构的基本操作" class="headerlink" title="c++中常见数据结构的基本操作"></a>c++中常见数据结构的基本操作</h1><h2 id="stack"><a href="#stack" class="headerlink" title="stack"></a>stack</h2><p>stack 的<strong>基本操作</strong>有：</p>
@@ -404,7 +404,7 @@
 <p>访问队列中的元素个数，如例：q.size()</p>
 <h2 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h2><p><strong>尾部插入数字</strong>：vec.push_back(a);</p>
 <p><strong>使用下标访问元素</strong>，cout&lt;&lt;vec[0]&lt;&lt;endl;记住下标是从0开始的。</p>
-<p><strong>使用迭代器访问元素</strong>.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vector&lt;int&gt;::iterator it;</div><div class="line">for(it=vec.begin();it!=vec.end();it++)</div><div class="line">    cout&lt;&lt;*it&lt;&lt;endl;</div></pre></td></tr></table></figure></p>
+<p><strong>使用迭代器访问元素</strong>.<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vector&lt;int&gt;::iterator <span class="keyword">it</span>;</div><div class="line"><span class="keyword">for</span>(<span class="keyword">it</span>=vec.begin();<span class="keyword">it</span>!=vec.<span class="keyword">end</span>();<span class="keyword">it</span>++)</div><div class="line">    cout&lt;&lt;*<span class="keyword">it</span>&lt;&lt;endl;</div></pre></td></tr></table></figure></p>
 <p><strong>插入元素</strong>：<code>vec.insert(vec.begin()+i,a);</code>在第i+1个元素前面插入a;</p>
 <p><strong>删除元素</strong>：<code>vec.erase(vec.begin()+2);</code>删除第3个元素</p>
 <p><code>vec.erase(vec.begin()+i,vec.end()+j);</code>删除区间[i,j-1];区间从0开始</p>
@@ -416,7 +416,7 @@
 <p><strong>使用sort排序</strong>：需要头文件<code>#include&lt;algorithm&gt;</code>，</p>
 <p><code>sort(vec.begin(),vec.end());</code>(默认是按升序排列,即从小到大).</p>
 <p>可以通过重写排序比较函数按照降序比较，如下：</p>
-<p>定义排序比较函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">bool Comp(const int &amp;a,const int &amp;b)</div><div class="line">&#123;</div><div class="line">    return a&gt;b;</div></pre></td></tr></table></figure></p>
+<p>定义排序比较函数：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Comp</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> &amp;a,<span class="keyword">const</span> <span class="keyword">int</span> &amp;b)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">return</span> a&gt;b;</div></pre></td></tr></table></figure></p>
 <p>调用时:<code>sort(vec.begin(),vec.end(),Comp)</code>，这样就降序排序。</p>
 
       
@@ -697,7 +697,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 -->
@@ -763,6 +763,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
