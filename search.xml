@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[leetcode 动态规划]]></title>
+      <title><![CDATA[leetcode 二叉树总结]]></title>
       <url>https://winper001.github.io/2018/08/28/leetcode%20%E4%BA%8C%E5%8F%89%E6%A0%91%E6%80%BB%E7%BB%93/</url>
       <content type="html"><![CDATA[<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>[toc]</p>
 <h1 id="基本的遍历方式"><a href="#基本的遍历方式" class="headerlink" title="基本的遍历方式"></a>基本的遍历方式</h1><p><strong>前序遍历</strong>：总是先访问根节点，再左子树，最后右子树</p>
