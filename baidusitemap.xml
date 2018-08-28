@@ -26,6 +26,28 @@
 
     
   <url>
+    <loc>https://winper001.github.io/2018/08/28/leetcode%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
+    <lastmod>2018-08-28T06:05:26.143Z</lastmod>
+    <data>
+        <display>
+        <title>leetcode 动态规划</title>
+        <pubTime>2018-08-28T06:06:13.372Z</pubTime>
+        
+        <tag>leetcode</tag>
+         
+        <tag>动态规划</tag>
+         
+         
+           
+             
+              <breadCrumb title="leetcode" url="https://winper001.github.io/categories/leetcode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://winper001.github.io/2018/08/25/inception%20v1%20v2%20v3%20v4/</loc>
     <lastmod>2018-08-28T04:41:24.033Z</lastmod>
     <data>
@@ -115,9 +137,9 @@
         <title>for循环里的递归</title>
         <pubTime>2018-08-26T16:00:00.000Z</pubTime>
         
-        <tag>递归</tag>
-         
         <tag>leetcode</tag>
+         
+        <tag>递归</tag>
          
          
            
@@ -268,28 +290,6 @@
            
              
               <breadCrumb title="深度学习" url="https://winper001.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://winper001.github.io/2018/08/24/leetcode%20%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
-    <lastmod>2018-08-23T17:14:16.241Z</lastmod>
-    <data>
-        <display>
-        <title>leetcode 动态规划</title>
-        <pubTime>2018-08-23T17:05:39.946Z</pubTime>
-        
-        <tag>leetcode</tag>
-         
-        <tag>动态规划</tag>
-         
-         
-           
-             
-              <breadCrumb title="leetcode" url="https://winper001.github.io/categories/leetcode/"/>
           
         </display>
     </data>
