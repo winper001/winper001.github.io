@@ -110,10 +110,10 @@
 <meta name="description" content="文章访问密码：请点击右下角消息图标联系我">
 <meta property="og:type" content="article">
 <meta property="og:title" content="c++常见基础知识">
-<meta property="og:url" content="https://winper001.github.io/2018/08/08/c++常见基础知识/index.html">
+<meta property="og:url" content="https://winper001.github.io/2018/08/28/c++常见基础知识/index.html">
 <meta property="og:site_name" content="winper001">
 <meta property="og:description" content="文章访问密码：请点击右下角消息图标联系我">
-<meta property="og:updated_time" content="2018-08-25T10:20:12.530Z">
+<meta property="og:updated_time" content="2018-08-28T15:24:40.188Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c++常见基础知识">
 <meta name="twitter:description" content="文章访问密码：请点击右下角消息图标联系我">
@@ -309,8 +309,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2018-08-08T15:27:52+08:00" content="2018-08-08">
-              2018-08-08
+            <time itemprop="dateCreated" datetime="2018-08-28T23:26:06+08:00" content="2018-08-28">
+              2018-08-28
             </time>
           </span>
 
@@ -339,8 +339,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2018/08/08/c++常见基础知识/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/08/08/c++常见基础知识/" itemprop="commentsCount"></span>
+                <a href="/2018/08/28/c++常见基础知识/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/08/28/c++常见基础知识/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -350,7 +350,7 @@
 
           
           
-             <span id="/2018/08/08/c++常见基础知识/" class="leancloud_visitors" data-flag-title="c++常见基础知识">
+             <span id="/2018/08/28/c++常见基础知识/" class="leancloud_visitors" data-flag-title="c++常见基础知识">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -372,7 +372,8 @@
       
 
       
-        <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><h1 id="编译器和预处理器（回到目录）"><a href="#编译器和预处理器（回到目录）" class="headerlink" title="编译器和预处理器（回到目录）"></a>编译器和预处理器（<a href="#目录"><font size="3" face="微软雅黑">回到目录</font></a>）</h1><ul>
+        <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>[toc]</p>
+<h1 id="编译器和预处理器（回到目录）"><a href="#编译器和预处理器（回到目录）" class="headerlink" title="编译器和预处理器（回到目录）"></a>编译器和预处理器（<a href="#目录"><font size="3" face="微软雅黑">回到目录</font></a>）</h1><ul>
 <li><strong>编译器</strong>就是把源代码翻译成目标代码的工具，目标代码可以是机器码，也可以是其他代码。</li>
 <li><strong>预处理器</strong>就是在代码交给编译器处理前，预先进行一些处理，比如包含头文件，宏展开等等。</li>
 </ul>
@@ -402,7 +403,35 @@
 <p>访问队尾元素，如例：q.back()，即最后被压入队列的元素。</p>
 <p>判断队列空，如例：q.empty()，当队列空时，返回true。</p>
 <p>访问队列中的元素个数，如例：q.size()</p>
-<h2 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h2><p><strong>尾部插入数字</strong>：vec.push_back(a);</p>
+<h2 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h2><h3 id="vector的六种初始化方式"><a href="#vector的六种初始化方式" class="headerlink" title="vector的六种初始化方式"></a>vector的六种初始化方式</h3><p>C++的初始化方法很多，各种初始化方法有一些不同。</p>
+<ul>
+<li><code>vector&lt;int&gt; ilist;</code></li>
+</ul>
+<p><strong>默认初始化，vector为空， size为0，表明容器中没有元素，而且 capacity 也返回 0，意味着还没有分配内存空间。这种初始化方式适用于元素个数未知，需要在程序中动态添加的情况。</strong></p>
+<ul>
+<li><code>vector&lt;int&gt; ilist2(ilist);</code></li>
+</ul>
+<p><code>vector&lt;int&gt; ilist2  = ilist;</code> </p>
+<p><strong>两种方式等价 ，ilist2 初始化为ilist 的拷贝，ilist必须与ilist2 类型相同，也就是同为int的vector类型，ilist2将具有和ilist相同的容量和元素.</strong></p>
+<ul>
+<li><p><code>vector&lt;int&gt; ilist = {1,2,3.0,4,5,6,7};</code></p>
+<p><code>vector&lt;int&gt; ilist {1,2,3.0,4,5,6,7};</code></p>
+</li>
+</ul>
+<p><strong>ilist 初始化为列表中元素的拷贝，列表中元素必须与ilist的元素类型相容，本例中必须是与整数类型相容的类型，整形会直接拷贝，其他类型会进行类型转换。</strong></p>
+<ul>
+<li><code>vector&lt;int&gt; ilist3(ilist.begin()+2,ilist.end()-1);</code></li>
+</ul>
+<p><strong>ilist3初始化为两个迭代器指定范围中元素的拷贝，范围中的元素类型必须与ilist3 的元素类型相容，在本例中ilist3被初始化为{3,4,5,6}。注意：由于只要求范围中的元素类型与待初始化的容器的元素类型相容，因此迭代器来自不同的容器是可能的，例如，用一个double的list的范围来初始化ilist3是可行的。另外由于构造函数只是读取范围中的元素进行拷贝，因此使用普通迭代器还是const迭代器来指出范围并没有区别。这种初始化方法特别适合于获取一个序列的子序列。</strong></p>
+<ul>
+<li><code>vector&lt;int&gt; ilist4(7);</code></li>
+</ul>
+<p><strong>默认值初始化，ilist4中将包含7个元素，每个元素进行缺省的值初始化，对于int，也就是被赋值为0，因此ilist4被初始化为包含7个0。当程序运行初期元素大致数量可预知，而元素的值需要动态获取的时候，可采用这种初始化方式。</strong></p>
+<ul>
+<li><code>vector&lt;int&gt; ilist5(7,3);</code></li>
+</ul>
+<p><strong>指定值初始化，ilist5被初始化为包含7个值为3的int</strong></p>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><p><strong>尾部插入数字</strong>：vec.push_back(a);</p>
 <p><strong>使用下标访问元素</strong>，cout&lt;&lt;vec[0]&lt;&lt;endl;记住下标是从0开始的。</p>
 <p><strong>使用迭代器访问元素</strong>.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vector&lt;int&gt;::iterator it;</div><div class="line">for(it=vec.begin();it!=vec.end();it++)</div><div class="line">    cout&lt;&lt;*it&lt;&lt;endl;</div></pre></td></tr></table></figure></p>
 <p><strong>插入元素</strong>：<code>vec.insert(vec.begin()+i,a);</code>在第i+1个元素前面插入a;</p>
@@ -418,7 +447,46 @@
 <p>可以通过重写排序比较函数按照降序比较，如下：</p>
 <p>定义排序比较函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">bool Comp(const int &amp;a,const int &amp;b)</div><div class="line">&#123;</div><div class="line">    return a&gt;b;</div></pre></td></tr></table></figure></p>
 <p>调用时:<code>sort(vec.begin(),vec.end(),Comp)</code>，这样就降序排序。</p>
-
+<h1 id="c-map基本操作"><a href="#c-map基本操作" class="headerlink" title="c++ map基本操作"></a>c++ map基本操作</h1><h2 id="pair类型"><a href="#pair类型" class="headerlink" title="pair类型"></a>pair类型</h2><h3 id="pair类型的定义和初始化"><a href="#pair类型的定义和初始化" class="headerlink" title="pair类型的定义和初始化"></a>pair类型的定义和初始化</h3><p>pair类型是在有文件utility中定义的，pair类型包含了两个数据值，通常有以下的一些定义和初始化的一些方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">pair&lt;T1, T2&gt; p;</div><div class="line">pair&lt;T1, T2&gt; p(v1, v2);</div><div class="line">make_pair(v1, v2)</div></pre></td></tr></table></figure></p>
+<p>上述<strong>第一种方法</strong>是定义了一个空的pair对象p，<strong>第二种方法</strong>是定义了包含初始值为v1和v2的pair对象p。<strong>第三种方法</strong>是以v1和v2值创建的一个新的pair对象。</p>
+<h3 id="pair对象的一些操作"><a href="#pair对象的一些操作" class="headerlink" title="pair对象的一些操作"></a>pair对象的一些操作</h3><p>除此之外，pair对象还有一些方法，如取出pair对象中的每一个成员的值：</p>
+<ul>
+<li>p.first</li>
+<li>p.second</li>
+<li>例如：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdio.h&gt;</div><div class="line">#include &lt;string.h&gt;</div><div class="line">#include &lt;string&gt;</div><div class="line">#include &lt;utility&gt;</div><div class="line">using namespace std;</div><div class="line"></div><div class="line">int main()&#123;</div><div class="line">        pair&lt;int, string&gt; p1(0, &quot;Hello&quot;);</div><div class="line">        printf(&quot;%d, %s\n&quot;, p1.first, p1.second.c_str());</div><div class="line">        pair&lt;int, string&gt; p2 = make_pair(1, &quot;World&quot;);</div><div class="line">        printf(&quot;%d, %s\n&quot;, p2.first, p2.second.c_str());</div><div class="line">        return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="map对象的定义和初始化"><a href="#map对象的定义和初始化" class="headerlink" title="map对象的定义和初始化"></a>map对象的定义和初始化</h2><p>map是键-值对的组合，有以下的一些定义的方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">map&lt;k, v&gt; m;</div><div class="line">map&lt;k, v&gt; m(m2);</div><div class="line">map&lt;k, v&gt; m(b, e);</div></pre></td></tr></table></figure></p>
+<p>上述<strong>第一种方法</strong>定义了一个名为m的空的map对象；<strong>第二种方法</strong>创建了m2的副本m；<strong>第三种方法</strong>创建了map对象m，并且存储迭代器b和e范围内的所有元素的副本。</p>
+<p><code>map</code>的<code>value_type</code>是存储元素的键以及值的<code>pair</code>类型，键为<code>const</code>。</p>
+<h2 id="map的一些操作"><a href="#map的一些操作" class="headerlink" title="map的一些操作"></a>map的一些操作</h2><h3 id="map元素插入"><a href="#map元素插入" class="headerlink" title="map元素插入"></a>map元素插入</h3><p>在map中元素有两种插入方法：</p>
+<p>使用下标<br>使用insert函数<br>在map中使用下标访问不存在的元素将导致在map容器中添加一个新的元素。</p>
+<p>insert函数的插入方法主要有如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">m.insert(e)</div><div class="line">m.insert(beg, end)</div><div class="line">m.insert(iter, e)</div></pre></td></tr></table></figure></p>
+<p>上述的e是一个<code>value_type</code>类型的值。beg和end标记的是迭代器的开始和结束。</p>
+<p>两种插入方法如下面的例子所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdio.h&gt;</div><div class="line">#include &lt;map&gt;</div><div class="line">using namespace std;</div><div class="line"></div><div class="line">int main()&#123;</div><div class="line">        map&lt;int, int&gt; mp;</div><div class="line">        for (int i = 0; i &lt; 10; i ++)&#123;</div><div class="line">                mp[i] = i;</div><div class="line">        &#125;</div><div class="line">        for (int i = 10; i &lt; 20; i++)&#123;</div><div class="line">                mp.insert(make_pair(i, i));</div><div class="line">        &#125;</div><div class="line">        map&lt;int, int&gt;::iterator it;</div><div class="line">        for (it = mp.begin(); it != mp.end(); it++)&#123;</div><div class="line">                printf(&quot;%d--&gt;%d\n&quot;, it-&gt;first, it-&gt;second);</div><div class="line">        &#125;</div><div class="line">        return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="map中元素的查找和读取"><a href="#map中元素的查找和读取" class="headerlink" title="map中元素的查找和读取"></a>map中元素的查找和读取</h3><p>注意：上述采用下标的方法读取map中元素时，若map中不存在该元素，则会在map中插入。</p>
+<p>因此，若只是查找该元素是否存在，可以使用函数count(k)，该函数返回的是k出现的次数；若是想取得key对应的值，可以使用函数find(k)，该函数返回的是指向该元素的迭代器。</p>
+<p>上述的两个函数的使用如下所示：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">#include &lt;stdio.h&gt;</div><div class="line">#include &lt;map&gt;</div><div class="line">using namespace std;</div><div class="line"></div><div class="line">int main()&#123;</div><div class="line">        map&lt;int, int&gt; mp;</div><div class="line">        for (int i = 0; i &lt; 20; i++)&#123;</div><div class="line">                mp.insert(make_pair(i, i));</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        if (mp.count(0))&#123;</div><div class="line">                printf(&quot;yes!\n&quot;);</div><div class="line">        &#125;else&#123;</div><div class="line">                printf(&quot;no!\n&quot;);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        map&lt;int, int&gt;::iterator it_find;</div><div class="line">        it_find = mp.find(0);</div><div class="line">        if (it_find != mp.end())&#123;</div><div class="line">                it_find-&gt;second = 20;</div><div class="line">        &#125;else&#123;</div><div class="line">                printf(&quot;no!\n&quot;);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        map&lt;int, int&gt;::iterator it;</div><div class="line">        for (it = mp.begin(); it != mp.end(); it++)&#123;</div><div class="line">                printf(&quot;%d-&gt;%d\n&quot;, it-&gt;first, it-&gt;second);</div><div class="line">        &#125;</div><div class="line">        return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="从map中删除元素"><a href="#从map中删除元素" class="headerlink" title="从map中删除元素"></a>从map中删除元素</h3><p>从map中删除元素的函数是erase()，该函数有如下的三种形式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">m.erase(k)</div><div class="line">m.erase(p)</div><div class="line">m.erase(b, e)</div></pre></td></tr></table></figure></p>
+<p>第一种方法删除的是m中键为k的元素，返回的是删除的元素的个数；第二种方法删除的是迭代器p指向的元素，返回的是void；第三种方法删除的是迭代器b和迭代器e范围内的元素，返回void。</p>
+<p>如下所示：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;map&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</div><div class="line">        <span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; mp;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">20</span>; i++)&#123;</div><div class="line">                mp.insert(make_pair(i, i));</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        mp.erase(<span class="number">0</span>);</div><div class="line"></div><div class="line">        mp.erase(mp.begin());</div><div class="line"></div><div class="line">        <span class="built_in">map</span>&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;::iterator it;</div><div class="line">        <span class="keyword">for</span> (it = mp.begin(); it != mp.end(); it++)&#123;</div><div class="line">                <span class="built_in">printf</span>(<span class="string">"%d-&gt;%d\n"</span>, it-&gt;first, it-&gt;second);</div><div class="line">        &#125;</div><div class="line"></div><div class="line"></div><div class="line">        <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="c-万能头文件"><a href="#c-万能头文件" class="headerlink" title="c++万能头文件"></a>c++万能头文件</h1><p><code>#include &lt;bits/stdc++.h&gt;</code></p>
+<h1 id="C-的printf方法-f保留小数位处理"><a href="#C-的printf方法-f保留小数位处理" class="headerlink" title="C++的printf方法%f保留小数位处理"></a>C++的printf方法%f保留小数位处理</h1><p>例如printf(“%7.2f”,a);结果保留2位，在f前面加上“整数位保留个数.小数位保留个数”</p>
+<p>固定 m 位小数 如此： printf(“%.mf”,a);</p>
+<p>例如 printf(“%.2f”,a); 保留小数点后两位</p>
+<p>要保留1位小数点：printf(“%.1f”,a);</p>
+<p>要保留2位小数点：printf(“%.2f”,a);</p>
+<p>要保留3位小数点：printf(“%.3f”,a);</p>
+<p>……</p>
+<p>如此类推。</p>
+<p>%8.3f。就是：占8个字符的位置，小数点后面有3位。注意小数点也算一位</p>
+<h1 id="c语言中计算字符串长度"><a href="#c语言中计算字符串长度" class="headerlink" title="c语言中计算字符串长度"></a>c语言中计算字符串长度</h1><ul>
+<li>strlen():纯长度，不包括‘/0’</li>
+<li>sizeof():包括‘/0’</li>
+</ul>
+<h1 id="set集合"><a href="#set集合" class="headerlink" title="set集合"></a>set集合</h1><p><strong>一个vector丢进set里面，set会把vector去重</strong>。</p>
+<p><strong>插入和遍历的代码</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> *argv[])</span></span></div><div class="line">&#123;    </div><div class="line">    <span class="built_in">set</span>&lt;<span class="built_in">string</span>&gt; set_str;    </div><div class="line">    <span class="built_in">string</span> str;</div><div class="line">    </div><div class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span>&gt;&gt;str)</div><div class="line">        set_str.insert(str);</div><div class="line"> </div><div class="line"> </div><div class="line">    <span class="built_in">set</span>&lt;<span class="built_in">string</span>&gt;::iterator iter=set_str.begin();</div><div class="line">    </div><div class="line">    <span class="keyword">while</span>(iter!=set_str.end())</div><div class="line">    &#123;</div><div class="line">        <span class="built_in">cout</span>&lt;&lt;*iter&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">        ++iter;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    system(<span class="string">"pause"</span>);</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div></pre></td></tr></table></figure>
       
     </div>
 	
@@ -479,17 +547,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/08/leetcode二分搜索法总结/" rel="next" title="leetcode二分搜索法总结">
-                <i class="fa fa-chevron-left"></i> leetcode二分搜索法总结
+              <a href="/2018/08/28/leetcode 动态规划/" rel="next" title="leetcode 动态规划">
+                <i class="fa fa-chevron-left"></i> leetcode 动态规划
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/14/leetcode刷题A/" rel="prev" title="leetcode刷题A部分">
-                leetcode刷题A部分 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -515,8 +579,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2018/08/08/c++常见基础知识/"
-           data-title="c++常见基础知识" data-url="https://winper001.github.io/2018/08/08/c++常见基础知识/">
+      <div class="ds-thread" data-thread-key="2018/08/28/c++常见基础知识/"
+           data-title="c++常见基础知识" data-url="https://winper001.github.io/2018/08/28/c++常见基础知识/">
       </div>
     
   </div>
@@ -649,7 +713,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编译器和预处理器（回到目录）"><span class="nav-number">2.</span> <span class="nav-text">编译器和预处理器（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#typedef使用"><span class="nav-number">3.</span> <span class="nav-text">typedef使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本解释"><span class="nav-number">3.1.</span> <span class="nav-text">基本解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用法"><span class="nav-number">3.2.</span> <span class="nav-text">用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意点"><span class="nav-number">3.3.</span> <span class="nav-text">注意点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优点"><span class="nav-number">3.4.</span> <span class="nav-text">优点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#c-中常见数据结构的基本操作"><span class="nav-number">4.</span> <span class="nav-text">c++中常见数据结构的基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#stack"><span class="nav-number">4.1.</span> <span class="nav-text">stack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#queue"><span class="nav-number">4.2.</span> <span class="nav-text">queue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vector"><span class="nav-number">4.3.</span> <span class="nav-text">vector</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编译器和预处理器（回到目录）"><span class="nav-number">2.</span> <span class="nav-text">编译器和预处理器（回到目录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#typedef使用"><span class="nav-number">3.</span> <span class="nav-text">typedef使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本解释"><span class="nav-number">3.1.</span> <span class="nav-text">基本解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用法"><span class="nav-number">3.2.</span> <span class="nav-text">用法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意点"><span class="nav-number">3.3.</span> <span class="nav-text">注意点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优点"><span class="nav-number">3.4.</span> <span class="nav-text">优点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#c-中常见数据结构的基本操作"><span class="nav-number">4.</span> <span class="nav-text">c++中常见数据结构的基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#stack"><span class="nav-number">4.1.</span> <span class="nav-text">stack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#queue"><span class="nav-number">4.2.</span> <span class="nav-text">queue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vector"><span class="nav-number">4.3.</span> <span class="nav-text">vector</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vector的六种初始化方式"><span class="nav-number">4.3.1.</span> <span class="nav-text">vector的六种初始化方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本操作"><span class="nav-number">4.3.2.</span> <span class="nav-text">基本操作</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#c-map基本操作"><span class="nav-number">5.</span> <span class="nav-text">c++ map基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#pair类型"><span class="nav-number">5.1.</span> <span class="nav-text">pair类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pair类型的定义和初始化"><span class="nav-number">5.1.1.</span> <span class="nav-text">pair类型的定义和初始化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pair对象的一些操作"><span class="nav-number">5.1.2.</span> <span class="nav-text">pair对象的一些操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#map对象的定义和初始化"><span class="nav-number">5.2.</span> <span class="nav-text">map对象的定义和初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#map的一些操作"><span class="nav-number">5.3.</span> <span class="nav-text">map的一些操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#map元素插入"><span class="nav-number">5.3.1.</span> <span class="nav-text">map元素插入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#map中元素的查找和读取"><span class="nav-number">5.3.2.</span> <span class="nav-text">map中元素的查找和读取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#从map中删除元素"><span class="nav-number">5.3.3.</span> <span class="nav-text">从map中删除元素</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#c-万能头文件"><span class="nav-number">6.</span> <span class="nav-text">c++万能头文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C-的printf方法-f保留小数位处理"><span class="nav-number">7.</span> <span class="nav-text">C++的printf方法%f保留小数位处理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#c语言中计算字符串长度"><span class="nav-number">8.</span> <span class="nav-text">c语言中计算字符串长度</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#set集合"><span class="nav-number">9.</span> <span class="nav-text">set集合</span></a></li></ol></div>
             
           </div>
         </section>
