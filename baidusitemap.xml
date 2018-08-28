@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://winper001.github.io/2018/08/25/inception%20v1%20v2%20v3%20v4/</loc>
+    <lastmod>2018-08-28T04:41:24.033Z</lastmod>
+    <data>
+        <display>
+        <title>inception v1-v4</title>
+        <pubTime>2018-08-25T10:24:15.978Z</pubTime>
+        
+        <tag>深度学习</tag>
+         
+        <tag>网络结构</tag>
+         
+         
+           
+             
+              <breadCrumb title="深度学习" url="https://winper001.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://winper001.github.io/2018/08/14/leetcode%E5%88%B7%E9%A2%98A/</loc>
     <lastmod>2018-08-27T11:09:13.534Z</lastmod>
     <data>
@@ -79,28 +101,6 @@
            
              
               <breadCrumb title="leetcode" url="https://winper001.github.io/categories/leetcode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://winper001.github.io/2018/08/25/inception%20v1%20v2%20v3%20v4/</loc>
-    <lastmod>2018-08-25T10:29:49.019Z</lastmod>
-    <data>
-        <display>
-        <title>inception v1-v4</title>
-        <pubTime>2018-08-25T10:24:15.978Z</pubTime>
-        
-        <tag>深度学习</tag>
-         
-        <tag>网络结构</tag>
-         
-         
-           
-             
-              <breadCrumb title="深度学习" url="https://winper001.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
