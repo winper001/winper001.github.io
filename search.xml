@@ -4,6 +4,22 @@
   
     
     <entry>
+      <title><![CDATA[解决机器学习问题的一般流程]]></title>
+      <url>https://winper001.github.io/2018/09/29/%E8%A7%A3%E5%86%B3%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E8%88%AC%E6%B5%81%E7%A8%8B/</url>
+      <content type="html"><![CDATA[<p>当我们拿到一个机器学习问题时，通常处理的流程分为以下几步，如图1所示：<br><img src="http://www.tensorflownews.com/wp-content/uploads/2018/03/%E5%9B%BE%E7%89%8725-1.png" alt=""></p>
+<p><strong>数据收集</strong>:</p>
+<p>业界有一句非常著名的话：“数据决定了机器学习的上界，而模型和算法只是逼近这个上界。”由此可见，数据对于整个机器学习项目至关重要。通常，我们拿到一个具体的领域问题后，可以使用网上一些具有代表性的、大众经常会用到的公开数据集。相较于自己整理的数据集，显然大众的数据集更具有代表性，数据处理的结果也更容易得到大家的认可。此外，大众的数据集在数据过拟合、数据偏差、数值缺失等问题上也会处理的更好。但如果在网上找不到现成的数据，那我们只好收集原始数据，再去一步步进行加工、整理，这将是一个漫长的过程，需要我们足够细心。</p>
+<p><strong>数据预处理和特征工程</strong>：</p>
+<p>即使我们能够拿到大众认可度比较高的代表性数据集，该数据集也会或多或少存在数据缺失、分布不均衡、存在异常数据、混有无关紧要的数据等诸多数据不规范的问题。这就需要我们对收集到的数据进行进一步的处理、包括数据的清洗、数据的转换、数据标准化、缺失值的处理、特征的提取、数据的降维等方面。我们把对数据的这一系列的工程化活动，叫做“特征工程”。</p>
+<p><strong>模型的选择和训练</strong>：</p>
+<p>首先我们要对处理好的数据进行分析，判断训练数据有没有类标，若是有类标则应该考虑监督学习的模型，否则可以划分为非监督学习问题。其次分析问题的类型是属于分类问题还是回归问题，当我们确定好问题的类型之后再去选择具体的模型。在模型的实际选择时，通常会考虑尝试不同的模型对数据进行训练，然后比较输出的结果，选择最佳的那个。此外，我们还会考虑到数据集的大小。若是数据集样本较少，训练的时间较短，通常考虑朴素贝叶斯等一些轻量级的算法，否则的话就要考虑SVM等一些重量级算法。</p>
+<p><strong>模型的评估与优化</strong>：</p>
+<p>之前我们大概介绍了一些模型评估的指标和方法。例如：我们可以选择查准率、查全率、AUC指标表现更好的模型；还可以通过的交叉验证法用验证集来评估模型性能的好坏；当然，也可以针对一种模型采用多种不同的方法，每种方法给予不同的权重值，来对该模型进行综合“评分”。在模型评估的过程中，我们可以判断模型的“过拟合”和“欠拟合”。若是存在数据过度拟合的现象，说明我们可能在训练过程中把噪声也当作了数据的一般特征，可以通过增大训练集的比例或是正则化的方法来解决过拟合的问题；若是存在数据拟合不到位的情况，说明我们数据训练的不到位，未能提取出数据的一般特征，要通过增加多项式维度、减少正则化参数等方法来解决欠拟合问题。最后，为了使模型的训练效果更优，我们还要对所选的模型进行调参，这就需要我们对模型的实现原理有更深的理解。</p>
+<p>此外，在实际项目中，我们还会对机器学习的模型进行模型的融合，根据模型的重要程度对每个模型设置不同的权重等，以调高模型的准确率。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[L1和L2正则化]]></title>
       <url>https://winper001.github.io/2018/09/28/%E4%B8%BA%E4%BB%80%E4%B9%88L1%E8%83%BD%E4%BA%A7%E7%94%9F%E7%A8%80%E7%96%8F%E6%9D%83%E9%87%8D%EF%BC%8CL2%E4%BA%A7%E7%94%9F%E5%B9%B3%E6%BB%91/</url>
       <content type="html"><![CDATA[<p>大家都说，<code>$L_1$</code>产生稀疏的权值，而<code>$L_2$</code>产生平滑的权值。这是为什么？下面我从两个角度来讲解一下：</p>
@@ -25,6 +41,47 @@
       <title><![CDATA[ROC曲线]]></title>
       <url>https://winper001.github.io/2018/09/28/ROC%E6%9B%B2%E7%BA%BF/</url>
       <content type="html"><![CDATA[<p><img src="https://note.youdao.com/yws/api/personal/file/EF71211872C742D681A6DBBBF66054FF?method=download&amp;shareKey=f58e3a39258e8f93e1155781c0e5a8a4" alt="ROC曲线"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[逻辑回归和SVM的区别]]></title>
+      <url>https://winper001.github.io/2018/09/28/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E5%92%8CSVM%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+      <content type="html"><![CDATA[<h1 id="逻辑回归和SVM的区别"><a href="#逻辑回归和SVM的区别" class="headerlink" title="逻辑回归和SVM的区别"></a>逻辑回归和SVM的区别</h1><ul>
+<li>LR采用log损失，SVM采用合页(hinge)损失函数；SVM的损失函数自带正则项，而LR需要在损失函数外面再加正则项</li>
+<li>LR对异常值敏感，SVM对异常值不敏感</li>
+<li>在训练集较小时，SVM较适用，而LR需要较多的样本</li>
+<li>LR模型考虑的是全部样本，SVM考虑的支持向量。</li>
+<li>SVM有核函数</li>
+</ul>
+<h1 id="应用的场景"><a href="#应用的场景" class="headerlink" title="应用的场景"></a>应用的场景</h1><p>在Andrew NG的课里讲到过：</p>
+<ol>
+<li>如果Feature的数量很大，跟样本数量差不多，这时候选用LR或者是Linear Kernel的SVM</li>
+<li><p>如果Feature的数量比较小，样本数量一般，不算大也不算小，选用SVM+Gaussian Kernel</p>
+</li>
+<li><p>如果Feature的数量比较小，而样本数量很多，需要手工添加一些feature变成第一种情况</p>
+</li>
+</ol>
+<p><strong>在小规模数据集上，Linear SVM要略好于LR，但差别也不是特别大，而且Linear SVM的计算复杂度受数据量限制，对海量数据LR使用更加广泛。</strong></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[bagging boosting stacking原理介绍]]></title>
+      <url>https://winper001.github.io/2018/09/28/bagging%20boosting%20stacking%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/</url>
+      <content type="html"><![CDATA[<p>本文分别介绍bagging boosting stacking三种方法。</p>
+<h1 id="boosting-减少偏差"><a href="#boosting-减少偏差" class="headerlink" title="boosting: 减少偏差"></a>boosting: 减少偏差</h1><p>对于提升方法来说，需要解决两个问题：</p>
+<ul>
+<li><p><strong>如何在每一轮中改变训练集数据的权重值或者是概率分布</strong>：<br>  提高那些在前一轮弱分类器分错了的样本的权值，使得分错的样本的在后一轮的分类器中得到更多的关注。</p>
+</li>
+<li><p><strong>如何将弱分类器组合成一个强分类器</strong>：加大分类误差小的弱分类器的权重，使得它在表决中起到更大的作用</p>
+</li>
+</ul>
+<h1 id="bagging-减少方差"><a href="#bagging-减少方差" class="headerlink" title="bagging: 减少方差"></a>bagging: 减少方差</h1><p>从原始数据中抽取样本集。每轮从原始样本中使用Bootstraping(有放回的)方法抽取n个训练样本（注：有些样本可能被多次抽到，也有可能有些样本一次都抽不到）。共进行k轮抽取，得到k个训练集。</p>
+<p>对<strong>分类问题</strong>：将k个模型投票</p>
+<p>对<strong>回归问题</strong>：计算上述模型的均值最后的结果。</p>
+<p>此外bagging使用中，训练集可以使用全部的特征进行训练，也可以选择部分特征训练。例如随机森林就是每次选取部分的特征。</p>
+<h1 id="stacking"><a href="#stacking" class="headerlink" title="stacking:"></a>stacking:</h1><p>用不同的模型的输出作为输入，再去学习，例如两层的FC.</p>
 ]]></content>
     </entry>
     
@@ -106,47 +163,6 @@ $</code></p>
 <h1 id="RF-SVM，神经网络的优缺点"><a href="#RF-SVM，神经网络的优缺点" class="headerlink" title="RF,SVM，神经网络的优缺点"></a>RF,SVM，神经网络的优缺点</h1><p><a href="https://blog.csdn.net/weixin_37933986/article/details/70160591" target="_blank" rel="external">链接</a></p>
 <h1 id="Batch-Normalization"><a href="#Batch-Normalization" class="headerlink" title="Batch Normalization"></a>Batch Normalization</h1><p><a href="https://blog.csdn.net/weixin_37933986/article/details/70161974" target="_blank" rel="external">BN</a></p>
 <h1 id="K-means总结"><a href="#K-means总结" class="headerlink" title="K-means总结"></a>K-means总结</h1><p><a href="https://blog.csdn.net/weixin_37933986/article/details/70578528" target="_blank" rel="external">k-means</a></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[bagging boosting stacking原理介绍]]></title>
-      <url>https://winper001.github.io/2018/09/28/bagging%20boosting%20stacking%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/</url>
-      <content type="html"><![CDATA[<p>本文分别介绍bagging boosting stacking三种方法。</p>
-<h1 id="boosting-减少偏差"><a href="#boosting-减少偏差" class="headerlink" title="boosting: 减少偏差"></a>boosting: 减少偏差</h1><p>对于提升方法来说，需要解决两个问题：</p>
-<ul>
-<li><p><strong>如何在每一轮中改变训练集数据的权重值或者是概率分布</strong>：<br>  提高那些在前一轮弱分类器分错了的样本的权值，使得分错的样本的在后一轮的分类器中得到更多的关注。</p>
-</li>
-<li><p><strong>如何将弱分类器组合成一个强分类器</strong>：加大分类误差小的弱分类器的权重，使得它在表决中起到更大的作用</p>
-</li>
-</ul>
-<h1 id="bagging-减少方差"><a href="#bagging-减少方差" class="headerlink" title="bagging: 减少方差"></a>bagging: 减少方差</h1><p>从原始数据中抽取样本集。每轮从原始样本中使用Bootstraping(有放回的)方法抽取n个训练样本（注：有些样本可能被多次抽到，也有可能有些样本一次都抽不到）。共进行k轮抽取，得到k个训练集。</p>
-<p>对<strong>分类问题</strong>：将k个模型投票</p>
-<p>对<strong>回归问题</strong>：计算上述模型的均值最后的结果。</p>
-<p>此外bagging使用中，训练集可以使用全部的特征进行训练，也可以选择部分特征训练。例如随机森林就是每次选取部分的特征。</p>
-<h1 id="stacking"><a href="#stacking" class="headerlink" title="stacking:"></a>stacking:</h1><p>用不同的模型的输出作为输入，再去学习，例如两层的FC.</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[逻辑回归和SVM的区别]]></title>
-      <url>https://winper001.github.io/2018/09/28/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E5%92%8CSVM%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-      <content type="html"><![CDATA[<h1 id="逻辑回归和SVM的区别"><a href="#逻辑回归和SVM的区别" class="headerlink" title="逻辑回归和SVM的区别"></a>逻辑回归和SVM的区别</h1><ul>
-<li>LR采用log损失，SVM采用合页(hinge)损失函数；SVM的损失函数自带正则项，而LR需要在损失函数外面再加正则项</li>
-<li>LR对异常值敏感，SVM对异常值不敏感</li>
-<li>在训练集较小时，SVM较适用，而LR需要较多的样本</li>
-<li>LR模型考虑的是全部样本，SVM考虑的支持向量。</li>
-<li>SVM有核函数</li>
-</ul>
-<h1 id="应用的场景"><a href="#应用的场景" class="headerlink" title="应用的场景"></a>应用的场景</h1><p>在Andrew NG的课里讲到过：</p>
-<ol>
-<li>如果Feature的数量很大，跟样本数量差不多，这时候选用LR或者是Linear Kernel的SVM</li>
-<li><p>如果Feature的数量比较小，样本数量一般，不算大也不算小，选用SVM+Gaussian Kernel</p>
-</li>
-<li><p>如果Feature的数量比较小，而样本数量很多，需要手工添加一些feature变成第一种情况</p>
-</li>
-</ol>
-<p><strong>在小规模数据集上，Linear SVM要略好于LR，但差别也不是特别大，而且Linear SVM的计算复杂度受数据量限制，对海量数据LR使用更加广泛。</strong></p>
 ]]></content>
     </entry>
     

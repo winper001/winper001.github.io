@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://winper001.github.io/2018/09/29/%E8%A7%A3%E5%86%B3%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%80%E8%88%AC%E6%B5%81%E7%A8%8B/</loc>
+    <lastmod>2018-09-28T16:19:33.937Z</lastmod>
+    <data>
+        <display>
+        <title>解决机器学习问题的一般流程</title>
+        <pubTime>2018-09-28T16:00:00.000Z</pubTime>
+        
+        <tag>机器学习</tag>
+         
+        <tag>面试</tag>
+         
+         
+           
+             
+              <breadCrumb title="机器学习" url="https://winper001.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://winper001.github.io/2018/09/28/ROC%E6%9B%B2%E7%BA%BF/</loc>
     <lastmod>2018-09-28T02:03:15.641Z</lastmod>
     <data>
@@ -263,9 +285,9 @@
         <title>for循环里的递归</title>
         <pubTime>2018-08-26T16:00:00.000Z</pubTime>
         
-        <tag>leetcode</tag>
-         
         <tag>递归</tag>
+         
+        <tag>leetcode</tag>
          
          
            
