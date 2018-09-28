@@ -4,6 +4,176 @@
   
     
     <entry>
+      <title><![CDATA[L1和L2正则化]]></title>
+      <url>https://winper001.github.io/2018/09/28/%E4%B8%BA%E4%BB%80%E4%B9%88L1%E8%83%BD%E4%BA%A7%E7%94%9F%E7%A8%80%E7%96%8F%E6%9D%83%E9%87%8D%EF%BC%8CL2%E4%BA%A7%E7%94%9F%E5%B9%B3%E6%BB%91/</url>
+      <content type="html"><![CDATA[<p>大家都说，<code>$L_1$</code>产生稀疏的权值，而<code>$L_2$</code>产生平滑的权值。这是为什么？下面我从两个角度来讲解一下：</p>
+<h1 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h1><p>这个角度从权值的更新公式来看权值的收敛结果。首先看下<code>$L_1$</code>和<code>$L_2$</code>的梯度：<br><img src="https://vimsky.com/wp-content/uploads/2015/08/gif.gif" alt=""></p>
+<p>所以(不失一般性，我们假定：<code>$w_i$</code>等于不为0的某个正的浮点数，学习速率<code>η</code>为0.5)：<br>L1的权值更新公式为<code>$w_i=w_i-η*1=w_i-0.5*1$</code>，也就是说权值每次更新都固定减少一个特定的值(比如0.5)，那么经过若干次迭代之后，权值就有可能减少到0。</p>
+<p>L2的权值更新公式为<code>$w_i= w_i-η*w_i=w_i-0.5*w_i$</code>，也就是说权值每次都等于上一次的1/2，那么，虽然权值不断变小，但是因为每次都等于上一次的一半，所以很快会收敛到较小的值但不为0。</p>
+<p>下面的图很直观的说明了这个变化趋势:</p>
+<p><img src="https://vimsky.com/wp-content/uploads/2015/08/1111.png" alt=""><br><img src="https://vimsky.com/wp-content/uploads/2015/08/2222.png" alt=""></p>
+<p><strong>得到结论</strong>：</p>
+<ul>
+<li>L1能产生等于0的权值，即能够剔除某些特征在模型中的作用（特征选择），即产生稀疏的效果。</li>
+<li>L2可以得迅速得到比较小的权值，但是难以收敛到0，所以产生的不是稀疏而是平滑的效果。</li>
+</ul>
+<h1 id="几何角度"><a href="#几何角度" class="headerlink" title="几何角度"></a>几何角度</h1><p>这个角度从几何位置关系来看权值的取值情况。<br><img src="https://vimsky.com/wp-content/uploads/2015/08/Screen-Shot-2015-08-26-at-21.56.02.png" alt=""><br>高维我们无法想象，简化到2维的情形，如上图所示。其中，左边是<code>$L_1$</code>图示，右边是<code>$L_2$</code>图示，左边的方形线上是L1中w1/w2取值区间，右边得圆形线上是L2中w1/w2的取值区间，绿色的圆圈表示w1/w2取不同值时整个正则化项的值的等高线（凸函数），从等高线和w1/w2取值区间的交点可以看到，L1中两个权值倾向于一个较大另一个为0，L2中两个权值倾向于均为非零的较小数。这也就是L1稀疏，L2平滑的效果。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[ROC曲线]]></title>
+      <url>https://winper001.github.io/2018/09/28/ROC%E6%9B%B2%E7%BA%BF/</url>
+      <content type="html"><![CDATA[<p><img src="https://note.youdao.com/yws/api/personal/file/EF71211872C742D681A6DBBBF66054FF?method=download&amp;shareKey=f58e3a39258e8f93e1155781c0e5a8a4" alt="ROC曲线"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[机器学习面试常见问题整理]]></title>
+      <url>https://winper001.github.io/2018/09/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E9%9D%A2%E8%AF%95%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%95%B4%E7%90%86/</url>
+      <content type="html"><![CDATA[<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>[toc]</p>
+<h1 id="常见的损失函数"><a href="#常见的损失函数" class="headerlink" title="常见的损失函数"></a>常见的损失函数</h1><p>通常机器学习每一个算法中都会有一个目标函数，算法的求解过程是通过对这个目标函数优化的过程。在分类或者回归问题中，通常使用损失函数（代价函数）作为其目标函数。损失函数用来评价模型的预测值和真实值不一样的程度，损失函数越好，通常模型的性能越好。不同的算法使用的损失函数不一样。<br>损失函数分为经验风险损失函数和结构风险损失函数。经验风险损失函数指预测结果和实际结果的差别，结构风险损失函数是指经验风险损失函数加上正则项。通常表示为如下： </p>
+<p><code>$
+\theta ^{*}=argmin\frac{1}{N}\sum_{i=1}^{N}L(y_{i},f(x_{i};\theta_{i} ))+\lambda \Phi (\theta )
+$</code></p>
+<p><strong>1. 0-1损失函数和绝对值损失函数</strong></p>
+<p>0-1损失是指，预测值和目标值不相等为1，否则为0：<br>                    <code>$
+                    L(Y,f(X))=\left\{\begin{matrix}
+                    1, Y\neq f(X)\\ 
+                    0, Y=f(X)
+                    \end{matrix}\right.
+                    $</code></p>
+<p>感知机就是用的这种损失函数。但是由于相等这个条件太过严格，因此我们可以放宽条件，即满足 <code>$|Y-f(X)|&lt;T$</code> 时认为相等。<br><code>$
+L(Y,f(X))=\left\{\begin{matrix}
+1, |Y-f(X)|\geq T\\ 
+0, |Y=f(X)|&lt;T
+\end{matrix}\right.
+$</code></p>
+<p>绝对值损失函数为：<br><code>$
+L(Y,f(X)=|Y-f(X)|
+$</code></p>
+<p><strong>2. log对数损失函数</strong> </p>
+<p>逻辑斯特回归的损失函数就是对数损失函数，在逻辑斯特回归的推导中，它假设样本服从伯努利分布（0-1）分布，然后求得满足该分布的似然函数，接着用对数求极值。逻辑斯特回归并没有求对数似然函数的最大值，而是把极大化当做一个思想，进而推导它的风险函数为最小化的负的似然函数。从损失函数的角度上，它就成为了log损失函数。 </p>
+<p>log损失函数的标准形式：<br><code>$
+L(Y, P(Y|X)) = -logP(Y|X)
+$</code></p>
+<p>在极大似然估计中，通常都是先取对数再求导，再找极值点，这样做是方便计算极大似然估计。损失函数<code>$L(Y,P(Y|X))L(Y,P(Y|X))L(Y, P(Y|X))$</code>是指样本X在分类Y的情况下，使概率P(Y|X)达到最大值（利用已知的样本分布，找到最大概率导致这种分布的参数值） </p>
+<p><strong>3. 平方损失函数</strong></p>
+<p>最小二乘法是线性回归的一种方法，它将回归的问题转化为了凸优化的问题。最小二乘法的基本原则是：最优拟合曲线应该使得所有点到回归直线的距离和最小。通常用欧几里得距离进行距离的度量。</p>
+<p>平方损失的损失函数为：<br><code>$
+L(Y|f(X)) =  \sum_{N}(Y - f(X))^{2}
+$</code></p>
+<p><strong>4. 指数损失函数</strong></p>
+<p>AdaBoost就是一指数损失函数为损失函数的。<br>指数损失函数的标准形式：<br><code>$
+L(Y|f(X)) = exp[-yf(x)]
+$</code></p>
+<p><strong>5. Hinge损失函数</strong></p>
+<p>Hinge损失函数和SVM是息息相关的。在线性支持向量机中，最优化问题可以等价于<br><code>$
+\min_{w,b}\sum_{i}^{N}(1 - y_{i}(wx_{i}+b))+\lambda ||w^{2}||
+$</code></p>
+<p>这个式子和如下的式子非常像：<br><code>$
+\frac{1}{m}\sum_{i=1}^{m}l(wx_{i}+by_{i})+||w||^{2}
+$</code><br>其中<code>$l(wxi+byi)l(wxi+byi)l(wx_{i}+by_{i})$</code>就是hinge损失函数，后面相当于L2正则项。<br>Hinge函数的标准形式：</p>
+<p><code>$
+L(y)=max(0,1-ty)
+$</code></p>
+<p>y是预测值，在-1到+1之间，t为目标值（-1或+1）。其含义为，y的值在-1和+1之间就可以了，并不鼓励<code>$|y|&gt;1|y|&gt;1|y|&gt;1$</code>，即并不鼓励分类器过度自信，让某个正确分类的样本的距离分割线超过1并不会有任何奖励，从而使分类器可以更专注于整体的分类误差。</p>
+<hr>
+<h1 id="梯度消失和梯度爆炸"><a href="#梯度消失和梯度爆炸" class="headerlink" title="梯度消失和梯度爆炸"></a>梯度消失和梯度爆炸</h1><p>神经网络的训练主要包括两个部分：前向传播和反向传播。<br>上一层的神经元与本层的神经元有连接，那么本层的神经元的激活等于上一层神经元对应的权值进行加权和运算，最后通过一个非线性函数（激活函数）如ReLu，sigmoid等函数，最后得到的结果就是本层神经元的输出。逐层逐神经元通过该操作向前传播，最终得到输出层的结果。<br><strong>反向传播</strong>由最后一层开始，逐层向前传播进行权值的调整。</p>
+<p><strong>前向传播</strong>得到的结果与实际的结果得到一个偏差，然后通过梯度下降法的思想，通过偏导数与残差的乘积通过从最后一层逐层向前去改变每一层的权重。通过不断的前向传播和反向传播不断调整神经网络的权重，最终到达预设的迭代次数或者对样本的学习已经到了比较好的程度后，就停止迭代，那么一个神经网络就训练好了。</p>
+<p><strong>那么为什么会出现梯度消失的现象呢？</strong></p>
+<p>因为通常神经网络所用的激活函数是sigmoid函数，这个函数有个特点，就是能将负无穷到正无穷的数映射到0和1之间，并且对这个函数求导的结果是<br><code>f′(x)=f(x)(1−f(x))</code><br>因此两个0到1之间的数相乘，得到的结果就会变得很小了。神经网络的反向传播是逐层对函数偏导相乘，因此当神经网络层数非常深的时候，最后一层产生的偏差就因为乘了很多的小于1的数而越来越小，最终就会变为0，从而导致层数比较浅的权重没有更新，这就是梯度消失。</p>
+<p><strong>那么什么是梯度爆炸呢</strong><br>梯度爆炸就是由于初始化权值过大，前面层会比后面层变化的更快，就会导致权值越来越大，梯度爆炸的现象就发生了。</p>
+<p><strong>如何解决梯度消失和梯度爆炸？</strong><br>常用的用于解决梯度消失和梯度爆炸的方法如下所示：</p>
+<ul>
+<li>使用 ReLU、LReLU、ELU、maxout 等激活函数<br>sigmoid函数的梯度随着x的增大或减小和消失，而ReLU不会。</li>
+<li>使用批规范化：通过规范化操作将输出信号x规范化到均值为0，方差为1保证网络的稳定性.从上述分析分可以看到，反向传播式子中有w的存在，所以w的大小影响了梯度的消失和爆炸，Batch Normalization 就是通过对每一层的输出规范为均值和方差一致的方法，消除了w带来的放大缩小的影响，进而解决梯度消失和爆炸的问题。</li>
+</ul>
+<hr>
+<h1 id="如何防止过拟合"><a href="#如何防止过拟合" class="headerlink" title="如何防止过拟合"></a>如何防止过拟合</h1><p><strong>通常过拟合由以下三种原因产生：</strong></p>
+<ol>
+<li>假设过于复杂；</li>
+<li>数据存在很多噪音；</li>
+<li>数据规模太小。 </li>
+</ol>
+<p><strong>过拟合的解决方法通常有：</strong></p>
+<ol>
+<li>early stopping；</li>
+<li>数据集扩增；</li>
+<li>正则化；</li>
+<li>Dropout。</li>
+</ol>
+<h1 id="RF-SVM，神经网络的优缺点"><a href="#RF-SVM，神经网络的优缺点" class="headerlink" title="RF,SVM，神经网络的优缺点"></a>RF,SVM，神经网络的优缺点</h1><p><a href="https://blog.csdn.net/weixin_37933986/article/details/70160591" target="_blank" rel="external">链接</a></p>
+<h1 id="Batch-Normalization"><a href="#Batch-Normalization" class="headerlink" title="Batch Normalization"></a>Batch Normalization</h1><p><a href="https://blog.csdn.net/weixin_37933986/article/details/70161974" target="_blank" rel="external">BN</a></p>
+<h1 id="K-means总结"><a href="#K-means总结" class="headerlink" title="K-means总结"></a>K-means总结</h1><p><a href="https://blog.csdn.net/weixin_37933986/article/details/70578528" target="_blank" rel="external">k-means</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[bagging boosting stacking原理介绍]]></title>
+      <url>https://winper001.github.io/2018/09/28/bagging%20boosting%20stacking%E5%8E%9F%E7%90%86%E4%BB%8B%E7%BB%8D/</url>
+      <content type="html"><![CDATA[<p>本文分别介绍bagging boosting stacking三种方法。</p>
+<h1 id="boosting-减少偏差"><a href="#boosting-减少偏差" class="headerlink" title="boosting: 减少偏差"></a>boosting: 减少偏差</h1><p>对于提升方法来说，需要解决两个问题：</p>
+<ul>
+<li><p><strong>如何在每一轮中改变训练集数据的权重值或者是概率分布</strong>：<br>  提高那些在前一轮弱分类器分错了的样本的权值，使得分错的样本的在后一轮的分类器中得到更多的关注。</p>
+</li>
+<li><p><strong>如何将弱分类器组合成一个强分类器</strong>：加大分类误差小的弱分类器的权重，使得它在表决中起到更大的作用</p>
+</li>
+</ul>
+<h1 id="bagging-减少方差"><a href="#bagging-减少方差" class="headerlink" title="bagging: 减少方差"></a>bagging: 减少方差</h1><p>从原始数据中抽取样本集。每轮从原始样本中使用Bootstraping(有放回的)方法抽取n个训练样本（注：有些样本可能被多次抽到，也有可能有些样本一次都抽不到）。共进行k轮抽取，得到k个训练集。</p>
+<p>对<strong>分类问题</strong>：将k个模型投票</p>
+<p>对<strong>回归问题</strong>：计算上述模型的均值最后的结果。</p>
+<p>此外bagging使用中，训练集可以使用全部的特征进行训练，也可以选择部分特征训练。例如随机森林就是每次选取部分的特征。</p>
+<h1 id="stacking"><a href="#stacking" class="headerlink" title="stacking:"></a>stacking:</h1><p>用不同的模型的输出作为输入，再去学习，例如两层的FC.</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[逻辑回归和SVM的区别]]></title>
+      <url>https://winper001.github.io/2018/09/28/%E9%80%BB%E8%BE%91%E5%9B%9E%E5%BD%92%E5%92%8CSVM%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
+      <content type="html"><![CDATA[<h1 id="逻辑回归和SVM的区别"><a href="#逻辑回归和SVM的区别" class="headerlink" title="逻辑回归和SVM的区别"></a>逻辑回归和SVM的区别</h1><ul>
+<li>LR采用log损失，SVM采用合页(hinge)损失函数；SVM的损失函数自带正则项，而LR需要在损失函数外面再加正则项</li>
+<li>LR对异常值敏感，SVM对异常值不敏感</li>
+<li>在训练集较小时，SVM较适用，而LR需要较多的样本</li>
+<li>LR模型考虑的是全部样本，SVM考虑的支持向量。</li>
+<li>SVM有核函数</li>
+</ul>
+<h1 id="应用的场景"><a href="#应用的场景" class="headerlink" title="应用的场景"></a>应用的场景</h1><p>在Andrew NG的课里讲到过：</p>
+<ol>
+<li>如果Feature的数量很大，跟样本数量差不多，这时候选用LR或者是Linear Kernel的SVM</li>
+<li><p>如果Feature的数量比较小，样本数量一般，不算大也不算小，选用SVM+Gaussian Kernel</p>
+</li>
+<li><p>如果Feature的数量比较小，而样本数量很多，需要手工添加一些feature变成第一种情况</p>
+</li>
+</ol>
+<p><strong>在小规模数据集上，Linear SVM要略好于LR，但差别也不是特别大，而且Linear SVM的计算复杂度受数据量限制，对海量数据LR使用更加广泛。</strong></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[C++中cin getline() cin.getline()的用法]]></title>
+      <url>https://winper001.github.io/2018/09/21/c++%E4%B8%ADcin%20getline()%20cin.getline()%E7%9A%84%E7%94%A8%E6%B3%95/</url>
+      <content type="html"><![CDATA[<h1 id="C-中cin-getline-cin-getline-的用法"><a href="#C-中cin-getline-cin-getline-的用法" class="headerlink" title="C++中cin getline() cin.getline()的用法"></a>C++中cin getline() cin.getline()的用法</h1><h2 id="cin"><a href="#cin" class="headerlink" title="cin"></a>cin</h2><p><strong>用法1：</strong> 输入一个数字或者字符<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">int</span> a,b;</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;a+b&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>用法2：</strong> 接收一个字符串，遇到“空格”，“TAB”,”回车”就结束。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">char</span> a[<span class="number">20</span>];</div><div class="line">    <span class="built_in">cin</span>&gt;&gt;a;</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">输入：jkljkljkl</div><div class="line">输出：jkljkljkl</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">输入：jkljkl jkljkl       //遇空格结束</div><div class="line">输出：jkljkl</div></pre></td></tr></table></figure>
+<h2 id="cin-getline-接收一个字符串，可以接收空格并输出。"><a href="#cin-getline-接收一个字符串，可以接收空格并输出。" class="headerlink" title="cin.getline():接收一个字符串，可以接收空格并输出。"></a>cin.getline():接收一个字符串，可以接收空格并输出。</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">char</span> m[<span class="number">20</span>];</div><div class="line">    <span class="built_in">cin</span>.getline(m,<span class="number">5</span>);</div><div class="line">    <span class="built_in">cout</span>&lt;&lt;m&lt;&lt;<span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">输入：jkljkljkl</div><div class="line">输出：jklj</div></pre></td></tr></table></figure>
+<p>接收5个字符到m中，其中最后一个为’\0’，所以只看到4个字符输出；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">如果把5改成20：</div><div class="line">输入：jkljkljkl</div><div class="line">输出：jkljkljkl</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">输入：jklf fjlsjf fjsdklf</div><div class="line">输出：jklf fjlsjf fjsdklf</div></pre></td></tr></table></figure>
+<p><strong>延伸：</strong><br>1、<code>cin.getline()</code>实际上有三个参数，cin.getline(接收字符串的变量,接收字符个数,结束字符)</p>
+<p>2、当第三个参数省略时，系统默认为’\0’</p>
+<p>3、如果将例子中<code>cin.getline()</code>改为<code>cin.getline(m,5,&#39;a&#39;);</code>当输入<code>jlkjkljkl</code>时输出<code>jklj</code>，输入<code>jkaljkljkl</code>时，输出<code>jk</code></p>
+<h1 id="getline-用法：接收一个字符串，可以接收空格并输出，需包含“-include”"><a href="#getline-用法：接收一个字符串，可以接收空格并输出，需包含“-include”" class="headerlink" title="getline() 用法：接收一个字符串，可以接收空格并输出，需包含“#include”"></a>getline() 用法：接收一个字符串，可以接收空格并输出，需包含“#include<string>”</string></h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#include&lt;iostream&gt;</div><div class="line">#include&lt;string&gt;</div><div class="line">using namespace std;</div><div class="line">int main ()</div><div class="line">&#123;</div><div class="line">    string str;</div><div class="line">    getline(cin,str);</div><div class="line">    cout&lt;&lt;str&lt;&lt;endl;</div><div class="line">    return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">输入：jkljkljkl</div><div class="line">输出：jkljkljkl</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">输入：jkl jfksldfj jklsjfl</div><div class="line">输出：jkl jfksldfj jklsjfl</div></pre></td></tr></table></figure>
+<h1 id="注意的问题"><a href="#注意的问题" class="headerlink" title="注意的问题"></a>注意的问题</h1><p>1、cin.getline()属于istream流，而getline()属于string流，是不一样的两个函数。</p>
+<p>2、当同时使用cin&gt;&gt;,getline()时，需要注意的是，在cin&gt;&gt;输入流完成之后，getline()之前，需要通过</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[leetcode 二叉树总结]]></title>
       <url>https://winper001.github.io/2018/08/28/leetcode%20%E4%BA%8C%E5%8F%89%E6%A0%91%E6%80%BB%E7%BB%93/</url>
       <content type="html"><![CDATA[<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>[toc]</p>
